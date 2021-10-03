@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croma Electronics | Online Electronics Shopping | Buy...</title>
+    <link rel="icon" href="https://www.croma.com/assets/croma-icon-192.png"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<style>
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+height:60%;
+width:20%;
+border:1px solid red;
+border-radius:3px;
+margin-right:15px;
+}
+.selectedResult{
+    display: flow-root;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container1 {
+  padding: 2px 8px;
+
+}
+
+#image1{
+background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+height:65%;
+width:100%;
+border-radius:3px;
+text-align:right;
+}
+.big_container{
+
+display:flex;
+
+height:90%;
+width:100%;
+
+}
+        #container{
+            width: 92%;
+            height: 35%;
+            overflow-x: hidden;
+            margin: 5% 5%;
+            background-color: white;
+            border:1px solid green;
+
+        }
+
+        #content{
+            width: 200%;
+            height: 40%;
+            background-color:white;
+            overflow-y: hidden;
+	    position:relative;
+        }
+
+        #content{
+            display: flex;
+        }
+
+        #content > div{
+            width: 80%;
+            height: 350px;
+            margin: 0.4%;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 16px 1px rgb(231, 224, 224);
+            border: 0.5px rgb(231, 224, 224);
+        }
+       
+        #leftArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #rightArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #leftArrow button, #rightArrow button{
+           
+            cursor: pointer;
+            font-size: 15px;
+            background-color:white;
+		 font-weight: bold;
+        }
+
+	.pre, .nex {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+
+.nex {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:-2%;
+}
+.pre{
+margin-left:1%;
+}
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+.navbar {
+  overflow: hidden;
+  background-color: teal;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height:10%;
+  z-index: 1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+margin-top:1%;
+margin-right:1%;
+
+}
+
+/* Main content */
+.main {
+  margin-top: 9%; /* Add a top margin to avoid content overlay */
+}
+
+.slideshow-container {
+   position: relative;
+  background: white;
+width:100%;
+height:100%;
+}
+
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: block;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+transition:3s;
+}
+
+
+
+.hc{
+
+margin-top:5%;
+}
+
+
+#bottomtext{
+line-height:25px;
+font-family:"Nunito",sans-serif;
+font-weight:200;
+color:#666;
+font-size:14px;
+margin-bottom:15px;
+margin-left:2%;
+
+}
+*{
+
+margin-left:0px;
+margin-right:0px;
+}
+
+#output{
+        width: 535px;
+        margin-left: 21.5%;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 40px;
+        max-height: 300px;
+        overflow-y: scroll;
+        z-index: 1;
+        position: fixed;
+    }
+    #output::-webkit-scrollbar {
+    display: none;
+    }
+    #output  p{
+        padding-left: 34px;
+        font-size: 20px;
+        height: 20px;
+        margin-top: auto; 
+    }
+    #output a {
+        color: #333 !important;
+        text-decoration: inherit;
+
+    }
+
+    #searchbar {
+        border-radius: 0.5rem;
+        font-size: 20px;
+        padding-left: 50px;
+        background-color: white;
+    }
+</style>
+
+
+</head>
+
+<body>
+<div class="navbar" style="text-align:center">
+   <div style="margin-bottom:20px">
+  <a href="#home" style="margin-top:-1.1px;margin-left:7.8px"><img src="https://i.postimg.cc/Wb8fn0cT/Screenshot-103.jpg" style="width:143.5px; height:44.5px;"/></a>
+  <a href="#menu"><div><span class="material-icons" >
+menu
+</span> Menu</div></a>
+  <a style="margin-right:0px;margin-top:-12px"><input type="text" placeholder="What are you looking for ?" id = "searchbar" style="height:35px;width:450px;border-radius:5px;border:0px;"></input>
+<img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:30px;margin-top:10px;margin-left:-5px"/></a>
+  <a href="#menu" style="margin-left:-20px">Orders</a>
+  <a href="#menu" >Sign In</a>
+  <a href="#menu" >Pincode</a>
+   <a href="#menu" ><span class="material-icons">
+shopping_cart
+</span></a>
+</div>
+<div id = "output"></div>
+</div>
+
+
+<div style="font-family:Material Icons">
+<div class="hc">
+<div class="home_cont">
+<img src="https://i.postimg.cc/sx0mCHP9/Screenshot-109.jpg" style="width:100%"/>
+<div class="slideshow-container" id="slide1">
+
+  
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/VvPJryHL/HP-Oppo-F19s-29-Sept-ndyszd.jpg" style="width:100%" />
+   
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/RC1FsDDK/HP-iphone13-series-with-HDFC-23sept-dvgvuj.jpg" style="width:100%" />
+    
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/vBtszpZm/BP-Mi-Tv-Senso-Matic-17-Sept-yw5wmq.jpg" style="width:100%" />
+    
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+<img src="https://i.postimg.cc/zfftM67B/Screenshot-102.jpg" style="width:100%"/>
+
+
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+
+//   Data to work on.
+
+let data = [
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1623479335/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/234793_ixa16w.png/fltn,mxw_240,f_auto",
+        Name : "Fire-Boltt BE1101 In-Ear Noise Isolation Truly Wireless Earbuds with Mic",
+        New_Price : 1699,
+        Old_Price : 5999,
+        Category : "earPhones",
+        Brand: 'fire-Boltt',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New'},
+        Rating : 3,
+        Rating_Review_count : 0,
+        },
+       
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605339837/Croma%20Assets/Communication/Mobiles/Images/8943201320990.png/fltn,mxw_240,f_auto                                                                                                                   ",
+        Name : "Samsung Galaxy A21s (64 GB ROM, 6 GB RAM, Black)",
+        New_Price : 14599,
+        Old_Price : 19999,
+        Category : "mobile",
+        Brand: 'samsung',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_80,w_80/v1605339837/Croma%20Assets/Communication/Mobiles/Images/8943201320990.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614778174/Croma%20Assets/Communication/Mobiles/Images/226895_3_mcp2fa.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New'},
+        Rating : 4,
+        Rating_Review_count : 113,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1615280445/Croma%20Assets/Communication/Mobiles/Images/233068_dyhxlp.png/fltn,mxw_240,f_auto",
+        Name : "Oppo F19 Pro Plus (128GB ROM, 8GB RAM, CPH2213, Space Silver)",
+        New_Price : 25990,
+        Old_Price : 29990,
+        Category : "mobile",
+        Brand: 'oppo',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617766099/Croma%20Assets/Communication/Mobiles/Images/233068_3_obvcqt.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617766106/Croma%20Assets/Communication/Mobiles/Images/233068_4_ope2lq.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4.5,
+        Rating_Review_count : 15,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1606588180/Croma%20Assets/Communication/Wearable%20Devices/Images/8979165446174.png/fltn,mxw_240,f_auto",
+        Name : "Apple Watch SE Smartwatch (GPS, 40mm) (Heart Rate Monitoring, MYDN2HN/A, Gold/Pink Sand, Sport Band)",
+        New_Price : 29900,
+        Old_Price : '',
+        Category : "smart Watch",
+        Brand: 'apple',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1606588174/Croma%20Assets/Communication/Wearable%20Devices/Images/8979165478942.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1606588176/Croma%20Assets/Communication/Wearable%20Devices/Images/8979165511710.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "IOS"},
+        Rating : 4.5,
+        Rating_Review_count : '1.32K',},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1625830739/Croma%20Assets/Communication/Mobiles/Images/237897_iwgpj9.png/fltn,mxw_240,f_auto",
+        Name : "Vivo Y1s (32GB ROM, 3GB RAM, PD2014CF_EX, Aurora Blue)",
+        New_Price : 9490,
+        Old_Price : 11990,
+        Category : "mobile",
+        Brand: 'vivo',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1628492115/Croma%20Assets/Communication/Mobiles/Images/237897_1_bkt0bw.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1628492114/Croma%20Assets/Communication/Mobiles/Images/237897_2_uze988.jpg"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1629103854/Croma%20Assets/Computers%20Peripherals/Laptop/Images/241953_wmcume.png/fltn,mxw_240,f_auto",
+        Name : "Asus X515EA-BQ312TS (90NB0TY2-M16540) Corei3 11th Gen Windows 10 Home Laptop (8GB RAM, 256GB SSD, Intel UHD Graphics, MS Office, 39.62cm, Transparent Silver)",
+        New_Price : 41990,
+        Old_Price : 51990,
+        Category : "laptop",
+        Brand: 'asus',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_80,w_80/v1631532156/Croma%20Assets/Computers%20Peripherals/Laptop/Images/241953_1_pnpzjk.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1629103824/Croma%20Assets/Computers%20Peripherals/Laptop/Images/241953_3_kfuwoz.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+       
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1618897573/Croma%20Assets/Communication/Mobiles/Images/233960_rwar3l.png/fltn,mxw_240,f_auto",
+        Name : "Oppo A54 (64GB ROM, 4GB RAM, CPH2239, Crystal Black)",
+        New_Price : 14990,
+        Old_Price : '',
+        Category : "mobile",
+        Brand: 'oppo',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1620190294/Croma%20Assets/Communication/Mobiles/Images/233960_3_p6temp.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1620190245/Croma%20Assets/Communication/Mobiles/Images/233960_4_izoxp7.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 20,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605271242/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/8977320968222.png/fltn,mxw_240,f_auto",
+        Name : "Apple iPad Air WiFi iOS Tablet (iPadOS 14, Apple A14 Bionic Chip, 27.68 cm (10.9 Inch), 64GB ROM, MYFR2HN/A, Green)",
+        New_Price : 50900,
+        Old_Price : 54900,
+        Category : "tablet",
+        Brand: 'apple',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617602356/Croma%20Assets/Communication/Mobiles/Images/229119_2_m29gh5.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627649131/Croma%20Assets/Communication/Mobiles/Images/229119_2_olbkxg.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "IOS"},
+        Rating : 4.75,
+        Rating_Review_count : '2.54K',},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605333528/Croma%20Assets/Communication/Mobiles/Images/8974465269790.png/fltn,mxw_240,f_auto",
+        Name : "Redmi 9 (64GB ROM, 4GB RAM, MZB07QCIN, Carbon Black)",
+        New_Price : 9799,
+        Old_Price : 10999,
+        Category : "mobile",
+        Brand: 'mi',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617602342/Croma%20Assets/Communication/Mobiles/Images/228937_2_slwb4b.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614576405/Croma%20Assets/Communication/Mobiles/Images/228937_3_vrl2pv.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4.25,
+        Rating_Review_count : 32,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1624459877/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/235539_lsmxgg.png/fltn,mxw_240,f_auto",
+        Name : "Samsung Galaxy Tab A7 Lite WiFi + 4G Android Tablet (Android 11, MediaTek Helio P22T, 22.05cm (8.7 Inches), 3GB RAM, 32GB ROM, SM-T225NZAAINS, Grey)",
+        New_Price : 14999,
+        Old_Price : 17500,
+        Category : "tablet",
+        Brand: 'samsung',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1625567033/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/235539_3_c4xhxp.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1625567034/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/235539_4_umqf3e.jpg"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 98,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1618898580/Croma%20Assets/Communication/Mobiles/Images/233966_qnfuya.png/fltn,mxw_240,f_auto",
+        Name : "Oppo A54 (128GB ROM, 6GB RAM, CPH2239, Crystal Black)",
+        New_Price : 16990,
+        Old_Price : 17990,
+        Category : "mobile",
+        Brand: 'oppo',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 20,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605339837/Croma%20Assets/Communication/Mobiles/Images/8943201320990.png/fltn,mxw_240,f_auto",
+        Name : "Lenovo Tab M8 8505F WiFi (Android 9.0 (Pie), 20.32 cm (8 Inch), 32 GB/2 GB RAM, Platinum Grey)",
+        New_Price : 9199,
+        Old_Price : 14000,
+        Category : "tablet",
+        Brand: 'lenovo',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617600248/Croma%20Assets/Communication/Mobiles/Images/224231_2_aeds2b.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614778138/Croma%20Assets/Communication/Mobiles/Images/224231_3_dorbcn.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4.5,
+        Rating_Review_count : '1.38K',},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1628075866/Croma%20Assets/Computers%20Peripherals/Laptop/Images/240739_ta763u.png/fltn,mxw_240,f_auto",
+        Name : "HP Pavilion 15-ec1023AX (183L8PA#ACJ) Ryzen 5 Windows 10 Home Gaming Laptop (8GB RAM, 1TB HDD, 256GB SSD, NVIDIA GeForce GTX 1650 Ti + 4GB Graphics, 39.62cm, Shadow Black)",
+        New_Price : 64990,
+        Old_Price : 82899,
+        Category : "laptop",
+        Brand: 'hp',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 4.75,
+        Rating_Review_count : 167,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605334215/Croma%20Assets/Communication/Mobiles/Images/8974799405086.png/fltn,mxw_240,f_auto",
+        Name : "Redmi 9A (32GB ROM, 3GB RAM, MZB9878IN, Midnight Black)",
+        New_Price : 8299,
+        Old_Price : 9499,
+        Category : "mobile",
+        Brand: 'mi',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617602344/Croma%20Assets/Communication/Mobiles/Images/228946_2_fo1jqy.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614576571/Croma%20Assets/Communication/Mobiles/Images/228946_3_fyejfj.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 6,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1623389338/Croma%20Assets/Communication/Mobiles/Images/235151_j94pg0.png",
+        Name : "OnePlus Nord CE 5G (128GB ROM, 8GB RAM, Charcoal Ink)",
+        New_Price : 24999,
+        Old_Price : '',
+        Category : "mobile",
+        Brand: 'oneplus',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1623420956/Croma%20Assets/Communication/Mobiles/Images/235151_1_lyekmw.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1623420958/Croma%20Assets/Communication/Mobiles/Images/235151_2_tef5js.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 20,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1605262065/Croma%20Assets/Communication/Mobiles/Images/9001728409630.png",
+        Name : "Apple iPhone 11 (64GB ROM, 4GB RAM, MHDA3HN/A, Black)",
+        New_Price : 46999,
+        Old_Price : 49900,
+        Category : "mobile",
+        Brand: 'apple',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "IOS"},
+        Rating : 4.5,
+        Rating_Review_count : '8.97K',},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1618483103/Croma%20Assets/Communication/Mobiles/Images/233912_zbe0hl.png",
+        Name : "OnePlus 9R (128GB ROM, 8GB RAM, LE2101, Lake Blue)",
+        New_Price : 39999,
+        Old_Price : 49900,
+        Category : "mobile",
+        Brand: 'oneplus',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 6,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1628663897/Croma%20Assets/Computers%20Peripherals/Laptop/Images/241925_cj8vr2.png",
+        Name : "HP 14s-dy2501TU (3T170PA#ACJ) Core i3 11th Gen Windows 10 Home Laptop (8GB RAM, 256GB SSD, Intel UHD Graphics, MS Office, 35.56cm, Natural Silver)",
+        New_Price : 41990,
+        Old_Price : 48350,
+        Category : "laptop",
+        Brand: 'hp',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1606107206/Croma%20Assets/Computers%20Peripherals/Laptop/Images/9004652232734.png",
+        Name : "Dell Inspiron 3501 (D560355WIN9BL) Core i3 10th Gen Windows 10 Notebook (4GB RAM, 1TB HDD, Intel UHD Graphics, MS Office, 39.62cm, Accent Black)",
+        New_Price : 38494,
+        Old_Price : 41045,
+        Category : "laptop",
+        Brand: 'dell',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 4,
+        Rating_Review_count : 5,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1619079166/Croma%20Assets/Computers%20Peripherals/Laptop/Images/234278_sh2yk0.png",
+        Name : "Lenovo Slim 3 (81WB0113IN) Core i3 10th Gen Windows 10 Home Thin and Light Laptop (4GB RAM, 256GB SSD, Intel UHD Graphics, MS Office, 39.62cm, Platinum Grey)",
+        New_Price : 40490,
+        Old_Price : 53790,
+        Category : "laptop",
+        Brand: 'lenovo',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_80,w_80/v1622198176/Croma%20Assets/Computers%20Peripherals/Laptop/Images/234278_1_ocbyiu.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_80,w_80/v1619079167/Croma%20Assets/Computers%20Peripherals/Laptop/Images/234278_2_chuiom.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1606585925/Croma%20Assets/Computers%20Peripherals/Laptop/Images/9009478991902.png",
+        Name : "Apple MacBook Air (MGN73HN/A) M1 macOS Big Sur Laptop (8GB RAM, 512GB SSD, Apple M1 GPU, 33.78cm, Space Grey)",
+        New_Price : 109900,
+        Old_Price : 117900,
+        Category : "laptop",
+        Brand: 'apple',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617606106/Croma%20Assets/Computers%20Peripherals/Laptop/Images/230958_1_tovu0k.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1606585923/Croma%20Assets/Computers%20Peripherals/Laptop/Images/9009481678878.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Mac"},
+        Rating : 5,
+        Rating_Review_count : "1.1K",},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1628518319/Croma%20Assets/Computers%20Peripherals/Laptop/Images/240804_q5f1zd.png",
+        Name : "HP 15s-du3060TX (360L6PA) Core i5 11th Gen Windows 10 Home Laptop (8GB RAM, 1TB HDD, NVIDIA GeForce MX350 + 2GB Graphics, MS Office, 39.62cm, Jet Black)",
+        New_Price : 58490,
+        Old_Price : 64300,
+        Category : "laptop",
+        Brand: 'hp',
+        other_images : [],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627025486/Croma%20Assets/Computers%20Peripherals/Laptop/Images/232338_xanjnq.png",
+        Name : "Dell Inspiron 3501 (D560385WIN9S) Core i5 11th Gen Windows 10 Home Notebook (8GB RAM, 1TB HDD + 256GB SSD,NVIDIA GeForce MX330 + 2GB Graphics, MS Office, 39.62cm, Soft Mint)",
+        New_Price : 68690,
+        Old_Price : 82298,
+        Category : "laptop",
+        Brand: 'dell',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627025488/Croma%20Assets/Computers%20Peripherals/Laptop/Images/232338_1_gnq1eh.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627025490/Croma%20Assets/Computers%20Peripherals/Laptop/Images/232338_2_ozataf.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1625809872/Croma%20Assets/Computers%20Peripherals/Laptop/Images/236011_ehhdqx.png",
+        Name : "Asus TUF Gaming F15 (FX566LH-HN266T) Core i5 10th Gen Windows 10 Home Gaming Laptop (8GB RAM, 1TB SSD, NVIDIA GeForce GTX 1650 + 4GB Graphics, 39.62cm, Fortress Grey)",
+        New_Price : 66990,
+        Old_Price : 89990,
+        Category : "laptop",
+        Brand: 'asus',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1628494169/Croma%20Assets/Computers%20Peripherals/Laptop/Images/236011_1_qapfzn.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1625809872/Croma%20Assets/Computers%20Peripherals/Laptop/Images/236011_2_ls0q9g.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Windows"},
+        Rating : 4,
+        Rating_Review_count : 7,},
+        
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605332199/Croma%20Assets/Entertainment/Television/Images/8960325517342.png/fltn,mxw_240,f_auto",
+        Name : "LG 108cm (43 Inch) Full HD LED Smart TV (43LM5600PTC, Black)",
+        New_Price : 33990,
+        Old_Price : 41990,
+        Category : "television",
+        Brand: 'lG',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 9,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631338622/Croma%20Assets/Entertainment/Television/Images/242597_lwe4fe.png",
+        Name : "Croma 80cm (32 Inch) HD Ready LED Standard TV (A Grade Panel, CREL7369, Black)",
+        New_Price : 12990,
+        Old_Price : 20000,
+        Category : "television",
+        Brand: 'croma',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631338621/Croma%20Assets/Entertainment/Television/Images/242597_3_ts6n6v.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631338622/Croma%20Assets/Entertainment/Television/Images/242597_7_oscswp.png"],
+        Specifications : {
+            Feature : 'Standard TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New'},
+        Rating : 3,
+        Rating_Review_count : 2,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1625208340/Croma%20Assets/Entertainment/Television/Images/234280_hmfqcv.png",
+        Name : "Sony Bravia X75 Series 126cm (50 Inch) Ultra HD 4K LED Android Smart TV (Dolby Audio & Alexa Compatibility, KD-50X75, Black)",
+        New_Price : 75990,
+        Old_Price : 84900,
+        Category : "television",
+        Brand: 'sony',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618815413/Croma%20Assets/Entertainment/Television/Images/233048_gkqaqe.png",
+        Name : "Hisense A71 Series 146cm (58 Inch) Ultra HD 4K LED Android Smart TV (3 Years Warranty, Built-in Chromecast, 58A71F, Black)",
+        New_Price : 44990,
+        Old_Price : 50990,
+        Category : "television",
+        Brand: 'hisense',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618913998/Croma%20Assets/Entertainment/Television/Images/233048_1_jcczxp.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618914030/Croma%20Assets/Entertainment/Television/Images/233048_2_vxu8u8.png"],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627293170/Croma%20Assets/Entertainment/Television/Images/240809_hd1hsl.png",
+        Name : "Xiaomi Mi 4A Pro 80cm (32 Inch) HD Ready LED Android Smart TV (Google Assistant Supported, 32ELA4636, Black)",
+        New_Price : 16999,
+        Old_Price : 19999,
+        Category : "television",
+        Brand: 'mi',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1629701739/Croma%20Assets/Entertainment/Television/Images/240809_1_pwiwxs.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1629701741/Croma%20Assets/Entertainment/Television/Images/240809_2_b4opjf.png"],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 5,
+        Rating_Review_count : 3,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1614699125/Croma%20Assets/Entertainment/Television/Images/232258_wp0d9g.png",
+        Name : "TCL P615 Series 125.8cm (50 Inch) Ultra HD 4K LED Android Smart TV (Dolby Audio Technology, 50P615, Black)",
+        New_Price : 38990,
+        Old_Price : 62990,
+        Category : "television",
+        Brand: 'tCL',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4.2,
+        Rating_Review_count : 4,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1628505477/Croma%20Assets/Entertainment/Television/Images/231503_zsijrz.png",
+        Name : "Croma Fire TV 109cm (43 Inch) Ultra HD 4K LED Smart TV (3 Years Warranty, Alexa Voice Assistant Remote, CREL7366, Black)",
+        New_Price : 35990,
+        Old_Price : 50000,
+        Category : "television",
+        Brand: 'croma',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 5,
+        Rating_Review_count : 26,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1625210421/Croma%20Assets/Entertainment/Television/Images/234516_khxges.png",
+        Name : "Sony Bravia X80J Series 108cm (43 Inch) Ultra HD 4K LED Google Smart TV (Dolby Vision Atmos & Alexa Compatibility, KD-43X80J, Black)",
+        New_Price : 69340,
+        Old_Price : 82900,
+        Category : "television",
+        Brand: 'sony',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 24,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1606073956/Croma%20Assets/Entertainment/Television/Images/9007409725470.png",
+        Name : "Samsung Series 4 T4350 80 cm (32 inch) HD Ready LED Smart TV (UA32T4350AKXXL, Black)",
+        New_Price : 21790,
+        Old_Price : 22900,
+        Category : "television",
+        Brand: 'samsung',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605125526/Croma%20Assets/Large%20Appliances/Refrigerator/Images/8971448614942.png",
+        Name : "Croma 90 L 1 Star Direct Cool Reversible Single Door Refrigerator (CRAR0219, White)",
+        New_Price : 10990,
+        Old_Price : 11000,
+        Category : "refrigerators",
+        Brand: 'croma',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605125535/Croma%20Assets/Large%20Appliances/Refrigerator/Images/8971469291550.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614600516/Croma%20Assets/Large%20Appliances/Refrigerator/Images/202200_4_aqqniq.png"],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 4,
+        Rating_Review_count : 53,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627035878/Croma%20Assets/Large%20Appliances/Refrigerator/Images/217088_s1kotp.png",
+        Name : "LG 260 Litres 2 Star Frost Free Inverter Double Door Refrigerator (Humidity Controller, GL-N292DDSY, Dazzle Steel)",
+        New_Price : 21990,
+        Old_Price : 28790,
+        Category : "refrigerators",
+        Brand: 'lG',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627035882/Croma%20Assets/Large%20Appliances/Refrigerator/Images/217088_2_y1xkvs.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627035884/Croma%20Assets/Large%20Appliances/Refrigerator/Images/217088_3_spgmgo.png"],
+        Specifications : {
+            Type : 'Double Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 4,
+        Rating_Review_count : 42,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605133655/Croma%20Assets/Large%20Appliances/Refrigerator/Images/8962370371614.png",
+        Name : "Tropicool 5 Litres 5 Star Single Door Inverter Mini Chiller and Warmer Car Refrigerator (PC05, Black)",
+        New_Price : 3990,
+        Old_Price : 4300,
+        Category : "refrigerators",
+        Brand: 'tropicool',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617701702/Croma%20Assets/Large%20Appliances/Refrigerator/Images/222855_2_dxsecr.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614602313/Croma%20Assets/Large%20Appliances/Refrigerator/Images/222855_4_bwrlix.png"],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "No",},
+        Rating : 4,
+        Rating_Review_count : 42,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605125526/Croma%20Assets/Large%20Appliances/Refrigerator/Images/8971448614942.png",
+        Name : "Croma 190 L 2 Star Direct Cool Single Door Refrigerator (CRAR0216, Brushline Silver)",
+        New_Price : 12490,
+        Old_Price : 16000,
+        Category : "refrigerators",
+        Brand: 'croma',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617701257/Croma%20Assets/Large%20Appliances/Refrigerator/Images/217274_2_bwov91.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_80,w_80/v1614600519/Croma%20Assets/Large%20Appliances/Refrigerator/Images/217274_4_qwqyaw.png"],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 4.5,
+        Rating_Review_count : 95,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1616401003/Croma%20Assets/Large%20Appliances/Refrigerator/Images/232708_xezvjw.png",
+        Name : "Samsung 198 Litres 4 Star Direct Cool Inverter Single Door Refrigerator (Stabilizer Free Operation, RR21A2F2XUV/HL, Blue Wave)",
+        New_Price : 18490,
+        Old_Price : 20990,
+        Category : "refrigerators",
+        Brand: 'samsung',
+        other_images : [],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1627281534/Croma%20Assets/Large%20Appliances/Refrigerator/Images/224939_ztigy2.png",
+        Name : "LG 260 Litres 2 Star Frost Free Inverter Double Door Refrigerator (Convertible, GL-S292RPZY.APZZEB, Shiny Steel)",
+        New_Price : 24490,
+        Old_Price : 31990,
+        Category : "refrigerators",
+        Brand: 'lG',
+        other_images : [],
+        Specifications : {
+            Type : 'Double Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 4.5,
+        Rating_Review_count : 23,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1605338087/Croma%20Assets/Large%20Appliances/Refrigerator/Images/8951179640862.png",
+        Name : "Whirlpool 292 Litres 3 Star Frost Free Inverter Double Door Refrigerator (5-in-1 Convertible Freezer Modes, IF INV CNV 305 ELT, Illusia Steel)",
+        New_Price : 31990,
+        Old_Price : 40900,
+        Category : "refrigerators",
+        Brand: 'whirlpool',
+        other_images : [],
+        Specifications : {
+            Type : 'Double Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 4.5,
+        Rating_Review_count : 53,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1615527934/Croma%20Assets/Large%20Appliances/Refrigerator/Images/233273_m2punx.png",
+        Name : "Haier 192 Litres 3 Star Direct Cool Single Door Refrigerator (With Base Drawer, HRD- 1923PKL-E, Black Lily)",
+        New_Price : 15990,
+        Old_Price : 24100,
+        Category : "refrigerators",
+        Brand: 'haier',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617793596/Croma%20Assets/Large%20Appliances/Refrigerator/Images/233273_3_go9uge.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617793598/Croma%20Assets/Large%20Appliances/Refrigerator/Images/233273_5_dw0g27.png"],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605263619/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/8934501318686.png",
+        Name : "Croma 1.5 Ton 5 Star Window AC (Copper Condenser, CRAC1153, White)",
+        New_Price : 29990,
+        Old_Price : 36000,
+        Category : "air Conditioners",
+        Brand: 'croma',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618226954/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/219987_2_dgvgoa.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605263606/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/8934500597790.png"],
+        Specifications : {
+            Type : 'Window Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 4,
+        Rating_Review_count : 21,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1614836661/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/233221_nmysf7.png",
+        Name : "Hitachi Kiyora 5100X 1.5 Ton 5 Star Inverter Split AC (Copper Condenser, RSRG518HEEA, White)",
+        New_Price : 43690,
+        Old_Price : 60500,
+        Category : "air Conditioners",
+        Brand: 'hitachi',
+        other_images : [],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 5,
+        Rating_Review_count : 12,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1613370149/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/207882.png",
+        Name : "Daikin 1.5 Ton 3 Star Inverter Split AC (Copper Condenser, ATKL50TV, White)",
+        New_Price : 36490,
+        Old_Price : 53700,
+        Category : "air Conditioners",
+        Brand: 'daikin',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1613374096/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/207882_2a.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1615975714/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/207882_3_hu9axy.png"],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 4.5,
+        Rating_Review_count : 40,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1628055807/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/235306_hjtcx6.png",
+        Name : "O General CPTB 2 Ton 4 Star Inverter Split AC (Copper Condenser, ASGG24CPTBB, White)",
+        New_Price : 57990,
+        Old_Price : 64100,
+        Category : "air Conditioners",
+        Brand: 'o General',
+        other_images : [],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605262568/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/9000230748190.png",
+        Name : "Voltas 1 Ton 3 Star Inverter Split AC (Copper Condenser, 123V MZQ, White)",
+        New_Price : 31190,
+        Old_Price : 49490,
+        Category : "air Conditioners",
+        Brand: 'voltas',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618043628/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/229499_2_hwpwpy.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614928479/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/229499_4_nxufra.png"],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 4,
+        Rating_Review_count : 7,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1614090523/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/232918_hgukmy.png",
+        Name : "Lloyd BP 1 Ton 3 Star Inverter Split AC (Copper Condenser, GLS12I36WSBP, White)",
+        New_Price : 28490,
+        Old_Price : 45990,
+        Category : "air Conditioners",
+        Brand: 'lloyd',
+        other_images : [],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 5,
+        Rating_Review_count : 5,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614168294/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/233016_jf1wkt.png",
+        Name : "Whirlpool Nitrocool 1.5 Ton 3 Star Inverter Split AC (4-in-1 Convertible, Copper Condenser, SAI18B31N0D, White)",
+        New_Price : 32790,
+        Old_Price : 63500,
+        Category : "air Conditioners",
+        Brand: 'whirlpool',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617773356/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/233016_3_zizy95.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617773349/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/233016_5_dgndyi.png"],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 3.75,
+        Rating_Review_count : 10,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1621247248/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/215441_jc1cek.png",
+        Name : "Croma 1.5 Ton 3 Star Inverter Split AC (Copper Condenser, CRAC7557, White/Grey Strip)",
+        New_Price : 32990,
+        Old_Price : 45000,
+        Category : "air Conditioners",
+        Brand: 'croma',
+        other_images : [],
+        Specifications : {
+            Type : 'Split Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 4,
+        Rating_Review_count : 75,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1628584581/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/211392_gyokip.png",
+        Name : "Croma 6.5 kg Semi Automatic Top Loading Washing Machine (CRAW2221, White)",
+        New_Price : 8990,
+        Old_Price : 12000,
+        Category : "washing Machine",
+        Brand: 'croma',
+        other_images : [],
+        Specifications : {
+            Load_Orientation : 'Top Load',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Operation_Type : "Semi-Automatic",},
+        Rating : 4,
+        Rating_Review_count : 137,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1608713753/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/231517_ycbcko.png",
+        Name : "Whirlpool Whitemagic Premier GenX 7 kg 5 Star Fully Automatic Top Load Washing Machine (Digital Display, 31467, Grey)",
+        New_Price : 16100,
+        Old_Price : 20450,
+        Category : "washing Machine",
+        Brand: 'whirlpool',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614670705/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/231517_4_affmdo.png", "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618206308/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/231517_1_rx0ey0.png"],
+        Specifications : {
+            Load_Orientation : 'Top Load',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Operation_Type : "Fully-Automatic",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605157814/Croma%20Assets/Large%20Appliances/Dryers/Images/8989620437022.png",
+        Name : "IFB TurboDry 550 5.5 Kg Fully Automatic Front Load Dryer (Anti-Crease, Allergy Free, White)",
+        New_Price : 19490,
+        Old_Price : 20990,
+        Category : "washing Machine",
+        Brand: 'ifb',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618049289/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/209377_1_o2uk6z.png", "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614660262/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/209377_4_ekzaml.png"],
+        Specifications : {
+            Load_Orientation : 'Front Load',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Operation_Type : "Fully-Automatic",},
+        Rating : 4,
+        Rating_Review_count : 8,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605324652/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/8948809400350.png",
+        Name : "Samsung 6.2 kg Fully Automatic Top Loading Washing Machine (WA62M4200HA/TL, Silver)",
+        New_Price : 15800,
+        Old_Price : 19100,
+        Category : "washing Machine",
+        Brand: 'samsung',
+        other_images : [],
+        Specifications : {
+            Load_Orientation : 'Top Load',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Operation_Type : "Fully-Automatic",},
+        Rating : 4.75,
+        Rating_Review_count : 65,},
+
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627295044/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/232783_tacybl.png/fltn,mxw_240,f_auto",
+        Name : "Bosch Serie 4 7 kg 5 Star Fully Automatic Top Load Washing Machine (EcoSilence Drive Friction-Free Motor, WOE704W1IN, White)",
+        New_Price : 19000,
+        Old_Price : 23490,
+        Category : "washing Machine",
+        Brand: 'bosch',
+        other_images : [],
+        Specifications : {
+            Load_Orientation : 'Top Load',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Operation_Type : "Fully-Automatic",},
+        Rating : 5,
+        Rating_Review_count : 6,},
+
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605304237/Croma%20Assets/Large%20Appliances/Dryers/Images/8977958404126.png/fltn,mxw_240,f_auto",
+        Name : "Bosch 7 kg Fully Automatic Front Loading Condenser Dryer (AllergyPlus Programme, WTN86203IN, White)",
+        New_Price : 36990,
+        Old_Price : 44890,
+        Category : "washing Machine",
+        Brand: 'bosch',
+        other_images : [],
+        Specifications : {
+            Load_Orientation : 'Front Load',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Operation_Type : "Fully-Automatic",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1629921047/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240042_w0pixy.png",
+        Name : "Spigen GLAS.tR Slim Screen Protector For Mi 11 Lite (Bubble Proof, AGL03048, Transparent)",
+        New_Price :999,
+        Old_Price : 2199,
+        Category : "mobile Accessories",
+        Brand: 'spigen',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1629921049/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240042_3_yzdhqn.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1629921053/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240042_5_noupkw.png"],
+        Specifications : {
+            Suitable_for : 'Mobile',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631048453/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240109_m1rzgz.png",
+        Name : "Spigen Style Ring For Universal Mobiles (Includes Hook Mount, 000EP20243, Space Grey)",
+        New_Price :899,
+        Old_Price : 1699,
+        Category : "mobile Accessories",
+        Brand: 'spigen',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631048452/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240109_3_y70xki.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631048451/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240109_6_fnhubz.png"],
+        Specifications : {
+            Suitable_for : 'Mobile',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630787871/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/239635_mtwrkl.png",
+        Name : "Spigen Velo A250 Mobile Holder (Dual-Mount Technology, 000CD20874, Black)",
+        New_Price :899,
+        Old_Price : 1499,
+        Category : "mobile Accessories",
+        Brand: 'spigen',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630787873/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/239635_3_vkemdn.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630787876/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/239635_4_hficml.png"],
+        Specifications : {
+            Suitable_for : 'Mobile',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631048211/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/239036_iqmpi6.png",
+        Name : "Portronics Mobike II Bike Mobile Holder (Steady Locking, POR-1306, Grey)",
+        New_Price :440,
+        Old_Price :899,
+        Category : "mobile Accessories",
+        Brand: 'portronics',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631048212/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/239036_4_mrcwus.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1631048210/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/239036_5_an6guh.png"],
+        Specifications : {
+            Suitable_for : 'Mobile',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630788028/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240518_vmuata.png",
+        Name : "Profigold 20 Meter HDMI to HDMI Audio & Video Cable (SPC Copper High Speed, PROV1220, Blue)",
+        New_Price : 22510,
+        Old_Price : 24761,
+        Category : "laptop Accessories",
+        Brand: 'portronics',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630788032/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240518_4_xomvl8.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630788036/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240518_6_zacper.png"],
+        Specifications : {
+            Suitable_for : 'Laptops & Systems',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630788275/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240541_ylsfan.png",
+        Name : "Bandridge 10 Meter HDMI to HDMI Video Display Cable (4K Resolution, VVL1210, Blue)",
+        New_Price : 1809,
+        Old_Price : 1990,
+        Category : "laptop Accessories",
+        Brand: 'bandridge',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630788277/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/240541_3_vvuorm.png"],
+        Specifications : {
+            Suitable_for : 'Laptops & Systems',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_80,w_80/v1630787718/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/238437_qwhalx.png",
+        Name : "HP DeskJet 2723 Wireless Color All-in-One Inkjet Printer (Hassle-Free Ink Management, White/Blue)",
+        New_Price : 5699,
+        Old_Price : 6481,
+        Category : "laptop Accessories",
+        Brand: 'hp',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630787721/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/238437_4_smd725.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1630787723/Croma%20Assets/Miscellanous/5K%20SKU_Images/Images/238437_5_trtkuk.png"],
+        Specifications : {
+            Suitable_for : 'Laptops & Systems',
+            condition : 'New',},
+        Rating : 0,
+        Rating_Review_count : 0,},
+
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605338848/Croma%20Assets/Communication/Mobiles/Images/8943200370718.png/fltn,mxw_240,f_auto",
+        Name : "Samsung Galaxy M11 (64GB ROM, 4GB RAM, SM-M115FZLEINS, Violet)",
+        New_Price : 10999,
+        Old_Price : 14999,
+        Category : "mobile",
+        Brand: 'samsung',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617601675/Croma%20Assets/Communication/Mobiles/Images/226258_2_uwqqis.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614778169/Croma%20Assets/Communication/Mobiles/Images/226258_3_ligo9h.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 7,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1616401791/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_xgxh8k.png",
+        Name : "Samsung 230 Litres 3 Star Direct Cool Inverter Single Door Refrigerator (Digital Inverter Compressor, RR24A282YS8/NL, Elegant Inox)",
+        New_Price : 18490,
+        Old_Price : 20490,
+        Category : "refrigerators",
+        Brand: 'samsung',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1616401792/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_3_klmtwb.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617946520/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_5_uobuqu.png"],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1618649072/Croma%20Assets/Entertainment/Television/Images/234146_b05pc1.png",
+        Name : "Samsung 8 Series 125cm (50 Inch) Ultra HD 4K LED Smart TV (Wi-Fi Supported, UA50AU8000KLXL, Black)",
+        New_Price : 59499,
+        Old_Price : 73900,
+        Category : "television",
+        Brand: 'samsung',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 5,
+        Rating_Review_count : 2,},
+
+    ];
+
+//   SearchBar functionality
+
+  let searchbar = document.getElementById('searchbar');
+
+    searchbar.addEventListener('keyup', (e) => {
+        let searchString = e.target.value.toLowerCase();
+        let matchedData =[];
+        let tempData = {}
+        if (searchString != '') {
+             matchedData = data.filter(product => {
+                 if(product.Category.includes(searchString) || product.Brand.includes(searchString)){
+                    //  console.log(matchedData.length)
+                    // console.log()
+                    return true
+                }else{
+                    return false
+                }
+
+                // return (product.Category.includes(searchString) || product.Brand.includes(searchString))
+                // console.log(e.Category)
+    
+            });
+            if (matchedData.length > 0) {
+    
+                displayProducts(matchedData);
+            }
+            else {
+                let output = document.getElementById("output")
+                output.innerHTML = '';
+            }
+        }
+        else {
+            let output = document.getElementById("output")
+            output.innerHTML = '';
+        }
+    });
+
+    // Displaying the search results
+    
+    let output = document.getElementById("output")
+
+    let displayProducts = (product) => {
+
+        let matchingProduct = product.map((product) => {
+
+            return `
+            <p class = "selectedResult"><a href = "./SearchResults.html#category=${product.Category}#brand=${product.Brand}">${product.Brand} ${product.Category}</a></p>`;
+        }).join('');
+
+        output.innerHTML = matchingProduct;
+    }
+
+    if(localStorage.getItem("CromaProducts")===null)
+    {
+        localStorage.setItem("CromaProducts",JSON.stringify(data));
+    }
+}
+
+
+
+
+</script> 
+
+
+<p style="width:98%" id="bottomtext">
+
+Launched in 2006, first one-of-its kind large format specialist retail electronics store, Croma, caters to over 12 Million happy customers for all of their multi-brand digital gadgets and home electronics. Since its inception, Croma has become synonymous for all electronics needs, both online & in-store, with a wide product range and tech-savvy staff with a will to help customers throughout their buying journeys.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+With a promise of a ‘#Brighter Every Day’ to its customers, Croma offers a world-class ambience and seamless ‘omni-channel’ shopping experience to enjoy the best of both, the online shopping & the offline worlds. By availing Croma’s omni-channel services, as a customer, one can enjoy online shopping and have the product delivered at their doorstep or can avail the pick-up from a Croma store near me service. Customers can also opt for Zip Express delivery service that makes sure to deliver the product at their doorstep within 3 hours in select cities.
+
+
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+With over 200 brands and 190+ stores across 40+ major cities of India, Croma ensures fulfilling electronic needs of each customer, and that there is something for everyone.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+Whether you're setting up a new home or simply looking for an upgrade, Croma offers an eclectic range of electronics to suit your needs. Browse through an array of Home & Kitchen Appliances such as Air Conditioners, Refrigerators, Washing Machines, Vacuum Cleaners, Microwave, Air Fryers, Soup Makers, Cooktops, Dishwashers, Water Heaters and many more such product categories.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+You can also make upgrading easy with an all-inclusive collection of LED TV, Speakers & Sound Systems. So, whether you're looking at rekindling your lost hobby with a Digital Camera, or hoping to surprise your loved ones with the latest Mobile, Laptop, or Desktop, Croma is a one-stop shop solution for all your needs.
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+If that's not all, Croma also offers an assortment of various other product categories to simplify your life including Home Safety Security, Wired & Wireless Headphones, Earphones, Smart Wearable Devices and all kinds of Accessories.
+
+
+</p>
+
+
+
+<p style="width:98%" id="bottomtext">
+With an attempt to become a go-to destination for all electronic goods, Croma has set up a platform called Gadgets of Desire that showcases all the New@Croma, quick-pick & latest technology products. This section is specially curated to match expectations of every innovative gadget lover, tech-savvy customer or for those looking for unique gifting ideas. Gadgets of Desire focuses to satiate every fitness freak, travel lover, in-house DJ or a computer geek. Croma assures your #BrighterTomorrow begins today!
+
+</p>
+
+
+
+<p style="width:98%" id="bottomtext">
+
+To delight customers all along, Croma also launched its own label products in 2008. Brand Croma stands for Life More Beautiful; a promise based not just on the beauty in the way they look, but mainly as a value they offer to a customer’s life. This range is a perfect fit, especially for those who desire a completely feature-packed and quality product in a pocket friendly price range. Additionally, to ensure that customers enjoy their product to the fullest, Croma encourages purchase of Annual Maintenance Plans and Extended Warranty to safeguard their product against mishaps and accidental damages during or beyond brand warranty.
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+Croma also rewards customers with cashbacks and discounts as a part of Privileges Programme to get more for their money and exceptional after sales service. Members in this programme enjoy Loyalty Discounts, Pre-qualified Credit, Exchange & Upgrade Benefits, Assured Lifetime Service and 14 Day Fix/Replace Assurance on select Home Appliances and LEDs. To register, give a missed call on 1800-22-6699, and redeem exclusive benefits at the nearest Croma store or on www.croma.com! This programme also includes Gift Card, a solution that gives customers the freedom of choice between physical Gift Cards or e-Gift Vouchers of multiple denominations.
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+Croma offers multiple payment gateways to select preferred payment option. A customer can choose from various payment modes like credit or debit cards, payment wallets and cash-on-delivery. Croma allows its customers to avail Easy EMI options on credit & debit cards or through available consumer finance options.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+Croma is a brand of Infiniti Retail Ltd., which is a wholly-owned subsidiary of Tata Sons, holding company of the Tata Group.
+</p>
+</body>
+</html>

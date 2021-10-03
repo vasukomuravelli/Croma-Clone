@@ -1,307 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search | Croma Electronics | Online Electronics Shopping | Buy...</title>
-    <!-- <link rel="icon" href="https://www.croma.com/assets/croma-icon-192.png"/> -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>      
-</head>
+    <title>Croma Electronics | Online Electronics Shopping | Buy...</title>
+    <link rel="icon" href="https://www.croma.com/assets/croma-icon-192.png"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <style>
-    body {
-        font-family: 'Nunito Sans', sans-serif;
-        color: #333;
-        display: flex;
-        width: 95vw;
-    }
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+height:60%;
+width:20%;
+border:1px solid red;
+border-radius:3px;
+margin-right:15px;
+}
+.selectedResult{
+    display: flow-root;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
-    #options {
-        width: 20%;
-        box-shadow: 0 0 8px 4px hsl(0deg 0% 78% / 21%);
-        padding: 1.5rem;
-        position: relative;
-        background: #fff;
-        transition: all .5s ease-in;
-        display: inline-block;
-        margin: 1%;
-    }
+/* Add some padding inside the card container */
+.container1 {
+  padding: 2px 8px;
 
-    #Results {
-        width: 70%;
-        margin: 1%;
-        vertical-align: top;
-    }
-    #Product_div{
-        width: 100%;
-        box-shadow: 0 0 8px 4px hsl(0deg 0% 78% / 21%);
-        border-radius: .8rem;
-        padding: 1.5rem;
-        background: #fff;
-        display: flex;
-        margin: 2%;
-        margin-top: 0%;
-    }
-    #details_div{
-        margin-left: 20px;
-    }
-    h2 {
-        margin-top: 0%;
-        font-size: 1.6rem;
-        display: flex;
-    }
-    #banner{
-        height: 50px;
-        display: flex;
-        justify-content: space-between;
-    }
-    a {
-        color: inherit;
-        text-decoration: inherit;        
-    }
-    #name_banner{
-        display: flex;
-    }
-    .heart{
-        cursor: pointer;
-        color: rgb(192, 39, 39);    
-    }
-    #price_rating_info{
-        display: flex;
-        height: 50px;
-        /* border: 1px solid blueviolet; */
-        width: 550px;
-    }
-    #New_price{
-        font-size: 23px;
-        font-weight: 700;
-    }
-    #Old_price{
-        margin-left: 20px;
-        font-size: 15px;
-        margin-top: 31px;
-    }
-    #price_rating_info > p:nth-child(4){
-        margin-left: 50px;
-        margin-top: 31px;
-        /* border: 1px solid blueviolet; */
-        width: 80px;
-        height: 20px;
-    }
-    #price_rating_info > p:nth-child(3){
-        margin-top: 24px;
-        margin-left: 35px;
-        background-color: #dbeff7;
-        color: #2e96bd;
-        height: 20px;
-        font-size: 15px;
-        padding: 2px 4px 2px 4px;
-        border-radius: .8rem 0 .8rem 0;
-        /* border: 1px solid blueviolet; */
-        min-width: 50px;
-    }
-    #price_rating_info > p:last-child{
-        margin-top: 31px;
-        margin-left: 25px;
-        /* border: 1px solid blueviolet; */
-        width: 105px;
-        height: 20px;
-    }
+}
 
-    .checked {
-        color: orange;
-        /* border: 1px solid black; */
-    }
+#image1{
+background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+height:65%;
+width:100%;
+border-radius:3px;
+text-align:right;
+}
+.big_container{
 
-    .unchecked {
-        /* border: 1px solid black; */
-        color: grey;
-    }
+display:flex;
 
-    #addtocart{
-        background-color: teal;
-        font-size: 20px;
-        border-radius: 25px;
-        color: white;
-        margin-top: 100px;
-        text-align: center;
-        width: 180px;
-        height: 50px;
-        border: 1px solid teal;
-    }
-    #addtocart:hover{
-        box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
-    }
-    #buynow:hover{
-        box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
-    }
-    #buynow{
-        background-color: #ffb900;
-        font-size: 20px;
-        border-radius: 25px;
-        color: white;
-        margin-top: 100px;
-        text-align: center;
-        margin-left: 60px;
-        text-align: center;
-        width: 180px;
-        height: 50px;
-        border: 1px solid #ffb900;
-    }
-    #SORT{
-        width: 100%;
-        margin-top: 20px;
-        font-size: 15px;
-        color: #666;
-        font-family: inherit; 
-        padding: 10px 20px 10px 20px;
+height:90%;
+width:100%;
+
+}
+        #container{
+            width: 92%;
+            height: 35%;
+            overflow-x: hidden;
+            margin: 5% 5%;
+            background-color: white;
+            border:1px solid green;
+
+        }
+
+        #content{
+            width: 200%;
+            height: 40%;
+            background-color:white;
+            overflow-y: hidden;
+	    position:relative;
+        }
+
+        #content{
+            display: flex;
+        }
+
+        #content > div{
+            width: 80%;
+            height: 350px;
+            margin: 0.4%;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 16px 1px rgb(231, 224, 224);
+            border: 0.5px rgb(231, 224, 224);
+        }
+       
+        #leftArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #rightArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #leftArrow button, #rightArrow button{
+           
+            cursor: pointer;
+            font-size: 15px;
+            background-color:white;
+		 font-weight: bold;
+        }
+
+	.pre, .nex {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+
+.nex {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:-2%;
+}
+.pre{
+margin-left:1%;
+}
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+.navbar {
+  overflow: hidden;
+  background-color: teal;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height:10%;
+  z-index: 1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+margin-top:1%;
+margin-right:1%;
+
+}
+
+/* Main content */
+.main {
+  margin-top: 9%; /* Add a top margin to avoid content overlay */
+}
+
+.slideshow-container {
+   position: relative;
+  background: white;
+width:100%;
+height:100%;
+}
+
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: block;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+transition:3s;
+}
+
+
+
+.hc{
+
+margin-top:5%;
+}
+
+
+#bottomtext{
+line-height:25px;
+font-family:"Nunito",sans-serif;
+font-weight:200;
+color:#666;
+font-size:14px;
+margin-bottom:15px;
+margin-left:2%;
+
+}
+*{
+
+margin-left:0px;
+margin-right:0px;
+}
+
+#output{
+        width: 535px;
+        margin-left: 21.5%;
         background-color: white;
-        border: 1px solid #ccc;
         border-radius: 5px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        max-height: 300px;
+        overflow-y: scroll;
+        z-index: 1;
+        position: fixed;
     }
-    label{
-        font-weight: 700;
+    #output::-webkit-scrollbar {
+    display: none;
     }
-    hr{
-        color : #e2e2e2;
-        margin-top: 5px;
+    #output  p{
+        padding-left: 34px;
+        font-size: 20px;
+        height: 20px;
+        margin-top: auto; 
     }
-    .details{
-        cursor: pointer;
-    }
-    details > summary {
-        display: flex;
-        justify-content: space-between;
-        padding: 1.2%;
-        font-size: 17px;
-        margin-top: 20px;
-    }
-    details > summary::after {
-        /* content: url(icons8-expand-arrow-30.png); */
-        width: 35px;
-        height: 38px;
-        display: inline-flex;
-        transition: transform 0.4s ease;
-        cursor: pointer;
-    }
-    details[open] > summary::after {
-        transform: rotate(180deg);
+    #output a {
+        color: #333 !important;
+        text-decoration: inherit;
+
     }
 
-    details > summary::-webkit-details-marker {
-        display: none;
+    #searchbar {
+        border-radius: 0.5rem;
+        font-size: 20px;
+        padding-left: 50px;
+        background-color: white;
     }
-    @keyframes details-show {
-                from {
-                    opacity:0;
-                    transform: var(--details-translate, translateY(-0.9em));
-                }
-            }
 </style>
 
-<body onload="dataStorage()">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <path
-        d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
-        fill="#2874F0" class="eX72wL" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div id="options">
-        <label for="SORT">SORT BY</label><br/>
 
-        <select id="SORT" name = 'SORT' onchange="jsfunction(this.value)">
-            <option value="HighestFirst">Price (Highest First)</option>
-            <option value="LowestFirst">Price (Lowest First)</option>
-            <option value="DiscountDescending">Discount (Descending)</option>
-        </select>
-        <label>FILTER BY</label>
-        <hr/>
-        <details>
-            <summary>Lifestyle</summary>
-            <div class = "details-content">
-                <p class = "details">Entertainment</p>
-                <p class = "details">Everyday Use</p>
-                <p class = "details">Gaming</p>             
-            </div>
-        </details>       
-        <hr/>
-        <details>
-            <summary>OS Type</summary>
-            <div class = "details-content">
-                <p class = "details">Window OS</p>
-                <p class = "details">Mac OS</p>
-                <p class = "details">Android</p>             
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>Display Size (Inches)</summary>
-            <div class = "details-content">
-                <p class = "details">13 to 14.99</p>
-                <p class = "details">15 to 16.99</p>
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>RAM(GB)</summary>
-            <div class = "details-content">
-                <p class = "details">4</p>
-                <p class = "details">6</p>
-                <p class = "details">8</p>
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>SSD Capacity</summary>
-            <div class = "details-content">
-                <p class = "details">0 - 512GB</p>
-                <p class = "details">512GB-1TB</p>
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>Colour Family</summary>
-            <div class = "details-content">
-                <p class = "details">Black</p>
-                <p class = "details">Blue</p>
-                <p class = "details">Silver</p>
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>Weight (kgs)</summary>
-            <div class = "details-content">
-                <p class = "details">0.5 To 1</p>
-                <p class = "details">1 To 1.5</p>
-                <p class = "details">1.5 To 2</p>
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>Country of Origin</summary>
-            <div class = "details-content">
-                <p class = "details">USA</p>
-                <p class = "details">Taiwan</p>
-            </div>
-        </details>
-        <hr/>
-        <details>
-            <summary>Store Availability</summary>
-            <div class = "details-content">
-                <p class = "details">Ambience Mall</p>
-                <p class = "details">Ashram Road</p>
-                <p class = "details">Belapur cbd</p>
-            </div>
-        </details>
-        <hr/>
-    </div>
-    <div id="Results"></div>
-</body>
+</head>
+
+<body>
+<div class="navbar" style="text-align:center">
+   <div style="margin-bottom:20px">
+  <a href="#home" style="margin-top:-1.1px;margin-left:7.8px"><img src="https://i.postimg.cc/Wb8fn0cT/Screenshot-103.jpg" style="width:143.5px; height:44.5px;"/></a>
+  <a href="#menu"><div><span class="material-icons" >
+menu
+</span> Menu</div></a>
+  <a style="margin-right:0px;margin-top:-12px"><input type="text" placeholder="What are you looking for ?" id = "searchbar" style="height:35px;width:450px;border-radius:5px;border:0px;"></input>
+<img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:30px;margin-top:10px;margin-left:-5px"/></a>
+  <a href="#menu" style="margin-left:-20px">Orders</a>
+  <a href="#menu" >Sign In</a>
+  <a href="#menu" >Pincode</a>
+   <a href="#menu" ><span class="material-icons">
+shopping_cart
+</span></a>
+</div>
+<div id = "output"></div>
+</div>
+
+
+<div style="font-family:Material Icons">
+<div class="hc">
+<div class="home_cont">
+<img src="https://i.postimg.cc/sx0mCHP9/Screenshot-109.jpg" style="width:100%"/>
+<div class="slideshow-container" id="slide1">
+
+  
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/VvPJryHL/HP-Oppo-F19s-29-Sept-ndyszd.jpg" style="width:100%" />
+   
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/RC1FsDDK/HP-iphone13-series-with-HDFC-23sept-dvgvuj.jpg" style="width:100%" />
+    
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/vBtszpZm/BP-Mi-Tv-Senso-Matic-17-Sept-yw5wmq.jpg" style="width:100%" />
+    
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+<img src="https://i.postimg.cc/zfftM67B/Screenshot-102.jpg" style="width:100%"/>
+
+
+</div>
 <script>
-      let data = [
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " active";
+
+//   Data to work on.
+
+let data = [
         {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1623479335/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/234793_ixa16w.png/fltn,mxw_240,f_auto",
         Name : "Fire-Boltt BE1101 In-Ear Noise Isolation Truly Wireless Earbuds with Mic",
         New_Price : 1699,
@@ -332,22 +405,6 @@
             condition : 'New'},
         Rating : 4,
         Rating_Review_count : 113,},
-        
-        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605338848/Croma%20Assets/Communication/Mobiles/Images/8943200370718.png/fltn,mxw_240,f_auto",
-        Name : "Samsung Galaxy M11 (64GB ROM, 4GB RAM, SM-M115FZLEINS, Violet)",
-        New_Price : 10999,
-        Old_Price : 14999,
-        Category : "mobile",
-        Brand: 'samsung',
-        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617601675/Croma%20Assets/Communication/Mobiles/Images/226258_2_uwqqis.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614778169/Croma%20Assets/Communication/Mobiles/Images/226258_3_ligo9h.png"],
-        Specifications : {
-            Charger : 'Provided in box',
-            Voice_Assistant_Support:'yes',
-            Bluetooth : 'V 5.0',
-            condition : 'New',
-            OS : "Android"},
-        Rating : 4,
-        Rating_Review_count : 7,},
         
         {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1615280445/Croma%20Assets/Communication/Mobiles/Images/233068_dyhxlp.png/fltn,mxw_240,f_auto",
         Name : "Oppo F19 Pro Plus (128GB ROM, 8GB RAM, CPH2213, Space Silver)",
@@ -764,22 +821,6 @@
         Rating : 0,
         Rating_Review_count : 0,},
 
-        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1618649072/Croma%20Assets/Entertainment/Television/Images/234146_b05pc1.png",
-        Name : "Samsung 8 Series 125cm (50 Inch) Ultra HD 4K LED Smart TV (Wi-Fi Supported, UA50AU8000KLXL, Black)",
-        New_Price : 59499,
-        Old_Price : 73900,
-        Category : "television",
-        Brand: 'samsung',
-        other_images : [],
-        Specifications : {
-            Feature : 'Smart TV',
-            Voice_Assistant_Support:'yes',
-            Bluetooth : 'V 5.0',
-            condition : 'New',
-            OS : "Android"},
-        Rating : 5,
-        Rating_Review_count : 2,},
-
         {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1627293170/Croma%20Assets/Entertainment/Television/Images/240809_hd1hsl.png",
         Name : "Xiaomi Mi 4A Pro 80cm (32 Inch) HD Ready LED Android Smart TV (Google Assistant Supported, 32ELA4636, Black)",
         New_Price : 16999,
@@ -857,22 +898,6 @@
             Bluetooth : 'V 5.0',
             condition : 'New',
             OS : "Android"},
-        Rating : 0,
-        Rating_Review_count : 0,},
-
-        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1616401791/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_xgxh8k.png",
-        Name : "Samsung 230 Litres 3 Star Direct Cool Inverter Single Door Refrigerator (Digital Inverter Compressor, RR24A282YS8/NL, Elegant Inox)",
-        New_Price : 18490,
-        Old_Price : 20490,
-        Category : "refrigerators",
-        Brand: 'samsung',
-        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1616401792/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_3_klmtwb.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617946520/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_5_uobuqu.png"],
-        Specifications : {
-            Type : 'Single Door Refrigerator',
-            Installation_Type : 'Floor Standing',
-            condition : 'New',
-            Stabilizer_Free_Operation : "Yes",
-            Parental_control : "Door Lock",},
         Rating : 0,
         Rating_Review_count : 0,},
 
@@ -1003,6 +1028,22 @@
             Parental_control : "Door Lock",},
         Rating : 0,
         Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605263619/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/8934501318686.png",
+        Name : "Croma 1.5 Ton 5 Star Window AC (Copper Condenser, CRAC1153, White)",
+        New_Price : 29990,
+        Old_Price : 36000,
+        Category : "air Conditioners",
+        Brand: 'croma',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618226954/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/219987_2_dgvgoa.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605263606/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/8934500597790.png"],
+        Specifications : {
+            Type : 'Window Air Conditioner',
+            Installation_Type : 'Wall Mount',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            WiFi_Connectivity : "No",},
+        Rating : 4,
+        Rating_Review_count : 21,},
 
         {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1614836661/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/233221_nmysf7.png",
         Name : "Hitachi Kiyora 5100X 1.5 Ton 5 Star Inverter Split AC (Copper Condenser, RSRG518HEEA, White)",
@@ -1099,22 +1140,6 @@
             WiFi_Connectivity : "No",},
         Rating : 3.75,
         Rating_Review_count : 10,},
-
-        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605263619/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/8934501318686.png",
-        Name : "Croma 1.5 Ton 5 Star Window AC (Copper Condenser, CRAC1153, White)",
-        New_Price : 29990,
-        Old_Price : 36000,
-        Category : "air Conditioners",
-        Brand: 'croma',
-        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1618226954/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/219987_2_dgvgoa.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1605263606/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/8934500597790.png"],
-        Specifications : {
-            Type : 'Window Air Conditioner',
-            Installation_Type : 'Wall Mount',
-            condition : 'New',
-            Stabilizer_Free_Operation : "Yes",
-            WiFi_Connectivity : "No",},
-        Rating : 4,
-        Rating_Review_count : 21,},
 
         {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1621247248/Croma%20Assets/Large%20Appliances/Air%20Conditioner/Images/215441_jc1cek.png",
         Name : "Croma 1.5 Ton 3 Star Inverter Split AC (Copper Condenser, CRAC7557, White/Grey Strip)",
@@ -1313,262 +1338,192 @@
         Rating : 0,
         Rating_Review_count : 0,},
 
-    ];
-    
-    function dataStorage()
-    {
-        if (localStorage.getItem("CromaProducts") === null)
-        {
-            localStorage.setItem("CromaProducts", JSON.stringify(data));
-        }
-    }
-    let search_parameter1 = window.location.hash.split('#')[1].split('=')[1].split('%20').join(' ').trim();
-    let search_parameter2 = window.location.hash.split('#')[2].split('=')[1].split('%20').join(' ').trim();
-
-    let croma_data = JSON.parse(localStorage.getItem("CromaProducts"));
-
-    let matched_products = [];
-
-    croma_data.forEach(element => {
-        if (element.Category == search_parameter1 && element.Brand == search_parameter2) {
-            matched_products.push(element);
-        }
-    });
-
-    let heading = document.createElement('h2');
-
-    let count = document.createElement('p');
-
-    count.textContent = `${matched_products.length} ` + "Products found";
-
-    let title = document.createElement('div');
-
-    title.setAttribute("id", "banner")
-
-    heading.textContent = "Results for " + `"${search_parameter2} ${search_parameter1}"`;
-
-    let Results = document.getElementById("Results");
-
-    title.append(heading,count);
-
-    let container = document.createElement('div');
-    
-    Results.append(title, container);
-
-function showserproducts(d)
-{
-    container.innerHTML = null;
-
-    d.forEach(function (element) {
+        {Image : "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/h_300,w_300/v1605338848/Croma%20Assets/Communication/Mobiles/Images/8943200370718.png/fltn,mxw_240,f_auto",
+        Name : "Samsung Galaxy M11 (64GB ROM, 4GB RAM, SM-M115FZLEINS, Violet)",
+        New_Price : 10999,
+        Old_Price : 14999,
+        Category : "mobile",
+        Brand: 'samsung',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617601675/Croma%20Assets/Communication/Mobiles/Images/226258_2_uwqqis.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1614778169/Croma%20Assets/Communication/Mobiles/Images/226258_3_ligo9h.png"],
+        Specifications : {
+            Charger : 'Provided in box',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 4,
+        Rating_Review_count : 7,},
         
-        let Product_div = document.createElement('div');
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1616401791/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_xgxh8k.png",
+        Name : "Samsung 230 Litres 3 Star Direct Cool Inverter Single Door Refrigerator (Digital Inverter Compressor, RR24A282YS8/NL, Elegant Inox)",
+        New_Price : 18490,
+        Old_Price : 20490,
+        Category : "refrigerators",
+        Brand: 'samsung',
+        other_images : ["https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1616401792/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_3_klmtwb.png","https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_350,w_350/v1617946520/Croma%20Assets/Large%20Appliances/Refrigerator/Images/231744_5_uobuqu.png"],
+        Specifications : {
+            Type : 'Single Door Refrigerator',
+            Installation_Type : 'Floor Standing',
+            condition : 'New',
+            Stabilizer_Free_Operation : "Yes",
+            Parental_control : "Door Lock",},
+        Rating : 0,
+        Rating_Review_count : 0,},
+        
+        {Image : "https://media.croma.com/image/upload/f_auto,q_auto,d_Croma%20Assets:no-product-image.jpg,h_260,w_260/v1618649072/Croma%20Assets/Entertainment/Television/Images/234146_b05pc1.png",
+        Name : "Samsung 8 Series 125cm (50 Inch) Ultra HD 4K LED Smart TV (Wi-Fi Supported, UA50AU8000KLXL, Black)",
+        New_Price : 59499,
+        Old_Price : 73900,
+        Category : "television",
+        Brand: 'samsung',
+        other_images : [],
+        Specifications : {
+            Feature : 'Smart TV',
+            Voice_Assistant_Support:'yes',
+            Bluetooth : 'V 5.0',
+            condition : 'New',
+            OS : "Android"},
+        Rating : 5,
+        Rating_Review_count : 2,},
 
-        Product_div.setAttribute("id", "Product_div");
+    ];
 
-        let image_div = document.createElement('div');
+//   SearchBar functionality
 
-        image_div.setAttribute("id", "image_div");
+  let searchbar = document.getElementById('searchbar');
 
-        let image = document.createElement('img');
+    searchbar.addEventListener('keyup', (e) => {
+        let searchString = e.target.value.toLowerCase();
+        let matchedData =[];
+        let tempData = {}
+        if (searchString != '') {
+             matchedData = data.filter(product => {
+                 if(product.Category.includes(searchString) || product.Brand.includes(searchString)){
+                    //  console.log(matchedData.length)
+                    // console.log()
+                    return true
+                }else{
+                    return false
+                }
 
-        image.src = element.Image;
-
-        let details_div = document.createElement('div');
-
-        details_div.setAttribute("id", "details_div");
-
-        let name_banner = document.createElement('div');
-
-        let wishlist_icon = document.createElement('div');
-
-        wishlist_icon.innerHTML = `<span class="material-icons" style="color:pink">favorite_border </span>`;
-
-        wishlist_icon.setAttribute("class","heart")
-
-        wishlist_icon.onclick=function(){
-            
-            addtowishlist(element);
-        }
-
-        let product_info = document.createElement('h2');
-
-        product_info.textContent = element.Name;
-
-        let price_rating_info = document.createElement('div');
-
-        price_rating_info.setAttribute("id", "price_rating_info");
-
-        let New_price = document.createElement('p');
-
-        let Old_price = document.createElement('p');
-
-        let rating = document.createElement('p');
-
-        let review = document.createElement('p');
-
-        review.textContent = "("+`${element.Rating_Review_count}` + "Reviews)"
-
-        New_price.textContent = "₹"+element.New_Price;
-
-        New_price.setAttribute("id","New_price");
-
-        Old_price.setAttribute("id","Old_price");
-
-        if(element.Old_Price != "")
-        {
-            Old_price.textContent = "₹"+element.Old_Price;
-        }
-        else
-        {
-            Old_price.textContent = element.Old_Price;
-        }
-
-
-        let discount_tag = document.createElement('p');
-
-        if(element.Old_Price !=0)
-        {
-            let discount = ((element.Old_Price-element.New_Price)/element.Old_Price)*100;
-            discount_tag.textContent=Math.floor(discount)+"% Off";
-        }
-        else
-        {
-            discount_tag.textContent="";
-            discount_tag.style.display="none";
-        }       
-
-        let price_strike = document.createElement('s');
-
-        price_strike.append(Old_price);
-
-        let price_change = document.createElement('p');
-
-        let buttons = document.createElement('div');
-
-        buttons.setAttribute("id","buttons");
-
-        let addtocart = document.createElement('button');
-
-        addtocart.textContent = "ADD TO CART";
-
-        addtocart.setAttribute("id", "addtocart");
-
-        let buynow = document.createElement('button');
-
-        buynow.setAttribute("id","buynow");
-
-        buynow.textContent = "BUY NOW";
-
-        buttons.append(addtocart,buynow);
-
-        let star_Rating = "";
-
-        for (let i = 1; i <= 5; i++) {
-            if (i < (Math.floor(element.Rating) + 1)) {
-                star_Rating += '<span class = "fa fa-star checked"></span>';
-
-            } else {
-                star_Rating += '<span class = "fa fa-star unchecked"></span>';
-
+                // return (product.Category.includes(searchString) || product.Brand.includes(searchString))
+                // console.log(e.Category)
+    
+            });
+            if (matchedData.length > 0) {
+    
+                displayProducts(matchedData);
+            }
+            else {
+                let output = document.getElementById("output")
+                output.innerHTML = '';
             }
         }
-        rating.innerHTML = (star_Rating);
-
-        Product_div.append(image_div, details_div);
-
-        image_div.append(image);
-
-        price_rating_info.append(New_price, price_strike,discount_tag, rating, review);
-
-        let Product_link = document.createElement('a');
-
-        Product_link.href = `./product.html#name=${element.Name}`;
-
-        details_div.append(name_banner, price_rating_info, buttons);
-
-        Product_link.append(product_info);
-        
-        name_banner.append(Product_link,wishlist_icon);
-
-        name_banner.setAttribute("id","name_banner");
-
-        container.append(Product_div);
-    });
-}
-showserproducts(matched_products);
-
-function jsfunction(value)
-{
-    if (value == 'HighestFirst')
-    {
-        PHL();
-    }
-    if (value == 'LowestFirst')
-    {
-        PLH();
-    }
-    if (value == 'DiscountDescending')
-    {
-        PHL();
-    }
-}
-
-function PHL()
-{
-    let arr = matched_products.sort((a,b)=>b.New_Price-a.New_Price);
-
-    showserproducts(arr);
-}
-
-function PLH()
-{
-    let arr = matched_products.sort((a,b)=>a.New_Price-b.New_Price);
-
-    showserproducts(arr);
-}
-
-function DHL()
-{
-    let arr = matched_products.sort((a,b)=> (((b.Old_Price-b.New_Price)/b.Old_Price)*100)-(((a.Old_Price-a.New_Price)/a.Old_Price)*100));
-        
-    showserproducts(arr);
-}
-
-function addtowishlist(product){
-
-    if(localStorage.getItem("wishlist")==null)
-    {
-        localStorage.setItem("wishlist",JSON.stringify([]));
-    }
-
-    let arr = JSON.parse(localStorage.getItem("wishlist"));
-
-    let count = 0;
-
-    for(var i=0;i<arr.length;i++)
-    {
-        if(arr[i].Name === product.Name)
-        {
-            var index = i;
-            count++;
+        else {
+            let output = document.getElementById("output")
+            output.innerHTML = '';
         }
+    });
+
+    // Displaying the search results
+    
+    let output = document.getElementById("output")
+
+    let displayProducts = (product) => {
+
+        let matchingProduct = product.map((product) => {
+
+            return `
+            <p class = "selectedResult"><a href = "./SearchResults.html#category=${product.Category}#brand=${product.Brand}">${product.Brand} ${product.Category}</a></p>`;
+        }).join('');
+
+        output.innerHTML = matchingProduct;
     }
-    if(count===0)
+
+    if(localStorage.getItem("CromaProducts")===null)
     {
-        arr.push(product);
-        alert("Product is added to your wishlist");
+        localStorage.setItem("CromaProducts",JSON.stringify(data));
     }
-    else
-    {
-        arr.splice(index,1);
-        alert("Product is removed from your wishlist");
-    }
-
-    localStorage.setItem("wishlist",JSON.stringify(arr));
-
-
 }
 
-</script>
 
+
+
+</script> 
+
+
+<p style="width:98%" id="bottomtext">
+
+Launched in 2006, first one-of-its kind large format specialist retail electronics store, Croma, caters to over 12 Million happy customers for all of their multi-brand digital gadgets and home electronics. Since its inception, Croma has become synonymous for all electronics needs, both online & in-store, with a wide product range and tech-savvy staff with a will to help customers throughout their buying journeys.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+With a promise of a ‘#Brighter Every Day’ to its customers, Croma offers a world-class ambience and seamless ‘omni-channel’ shopping experience to enjoy the best of both, the online shopping & the offline worlds. By availing Croma’s omni-channel services, as a customer, one can enjoy online shopping and have the product delivered at their doorstep or can avail the pick-up from a Croma store near me service. Customers can also opt for Zip Express delivery service that makes sure to deliver the product at their doorstep within 3 hours in select cities.
+
+
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+With over 200 brands and 190+ stores across 40+ major cities of India, Croma ensures fulfilling electronic needs of each customer, and that there is something for everyone.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+Whether you're setting up a new home or simply looking for an upgrade, Croma offers an eclectic range of electronics to suit your needs. Browse through an array of Home & Kitchen Appliances such as Air Conditioners, Refrigerators, Washing Machines, Vacuum Cleaners, Microwave, Air Fryers, Soup Makers, Cooktops, Dishwashers, Water Heaters and many more such product categories.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+You can also make upgrading easy with an all-inclusive collection of LED TV, Speakers & Sound Systems. So, whether you're looking at rekindling your lost hobby with a Digital Camera, or hoping to surprise your loved ones with the latest Mobile, Laptop, or Desktop, Croma is a one-stop shop solution for all your needs.
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+If that's not all, Croma also offers an assortment of various other product categories to simplify your life including Home Safety Security, Wired & Wireless Headphones, Earphones, Smart Wearable Devices and all kinds of Accessories.
+
+
+</p>
+
+
+
+<p style="width:98%" id="bottomtext">
+With an attempt to become a go-to destination for all electronic goods, Croma has set up a platform called Gadgets of Desire that showcases all the New@Croma, quick-pick & latest technology products. This section is specially curated to match expectations of every innovative gadget lover, tech-savvy customer or for those looking for unique gifting ideas. Gadgets of Desire focuses to satiate every fitness freak, travel lover, in-house DJ or a computer geek. Croma assures your #BrighterTomorrow begins today!
+
+</p>
+
+
+
+<p style="width:98%" id="bottomtext">
+
+To delight customers all along, Croma also launched its own label products in 2008. Brand Croma stands for Life More Beautiful; a promise based not just on the beauty in the way they look, but mainly as a value they offer to a customer’s life. This range is a perfect fit, especially for those who desire a completely feature-packed and quality product in a pocket friendly price range. Additionally, to ensure that customers enjoy their product to the fullest, Croma encourages purchase of Annual Maintenance Plans and Extended Warranty to safeguard their product against mishaps and accidental damages during or beyond brand warranty.
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+Croma also rewards customers with cashbacks and discounts as a part of Privileges Programme to get more for their money and exceptional after sales service. Members in this programme enjoy Loyalty Discounts, Pre-qualified Credit, Exchange & Upgrade Benefits, Assured Lifetime Service and 14 Day Fix/Replace Assurance on select Home Appliances and LEDs. To register, give a missed call on 1800-22-6699, and redeem exclusive benefits at the nearest Croma store or on www.croma.com! This programme also includes Gift Card, a solution that gives customers the freedom of choice between physical Gift Cards or e-Gift Vouchers of multiple denominations.
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+Croma offers multiple payment gateways to select preferred payment option. A customer can choose from various payment modes like credit or debit cards, payment wallets and cash-on-delivery. Croma allows its customers to avail Easy EMI options on credit & debit cards or through available consumer finance options.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+Croma is a brand of Infiniti Retail Ltd., which is a wholly-owned subsidiary of Tata Sons, holding company of the Tata Group.
+</p>
+</body>
 </html>

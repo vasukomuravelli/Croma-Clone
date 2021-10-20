@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<style>
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+height:60%;
+width:20%;
+border:1px solid red;
+border-radius:3px;
+margin-right:15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container1 {
+  padding: 2px 8px;
+
+}
+
+#image1{
+background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+height:65%;
+width:100%;
+border-radius:3px;
+text-align:right;
+}
+.big_container{
+
+display:flex;
+
+height:90%;
+width:100%;
+
+}
+        #container{
+            width: 92%;
+            height: 35%;
+            overflow-x: hidden;
+            margin: 5% 5%;
+            background-color: white;
+            border:1px solid green;
+
+        }
+
+        #content{
+            width: 200%;
+            height: 40%;
+            background-color:white;
+            overflow-y: hidden;
+	    position:relative;
+        }
+
+        #content{
+            display: flex;
+        }
+
+        #content > div{
+            width: 80%;
+            height: 350px;
+            margin: 0.4%;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 16px 1px rgb(231, 224, 224);
+            border: 0.5px rgb(231, 224, 224);
+        }
+       
+        #leftArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #rightArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #leftArrow button, #rightArrow button{
+           
+            cursor: pointer;
+            font-size: 15px;
+            background-color:white;
+		 font-weight: bold;
+        }
+
+	.pre, .nex {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+
+.nex {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:-2%;
+}
+.pre{
+margin-left:1%;
+}
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+.navbar {
+  overflow: hidden;
+  background-color: teal;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height:14%;
+  z-index:1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+margin-top:1%;
+margin-right:1%;
+
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background:teal;
+  
+}
+
+/* Main content */
+.main {
+  margin-top: 9%; /* Add a top margin to avoid content overlay */
+}
+
+.slideshow-container {
+   position: relative;
+  background: white;
+width:100%;
+
+margin-top:2%;
+height:100%;
+}
+
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+transition:3s;
+}
+
+
+
+.hc{
+
+margin-top:9%;
+}
+
+
+#bottomtext{
+line-height:25px;
+font-family:"Nunito",sans-serif;
+font-weight:200;
+color:#666;
+font-size:14px;
+margin-bottom:15px;
+margin-left:2%;
+
+}
+*{
+
+margin-left:0px;
+margin-right:0px;
+}
+</style>
+
+
+</head>
+
+<body>
+<div class="navbar" style="text-align:center">
+   <div style="margin-bottom:20px">
+  <a href="#home" style="margin-top:-1.1px;margin-left:7.8px"><img src="https://i.postimg.cc/Wb8fn0cT/Screenshot-103.jpg" style="width:143.5px; height:44.5px;"/></a>
+  <a href="#menu"><div><span class="material-icons" >
+menu
+</span> Menu</div></a>
+  <a style="margin-right:0px;margin-top:-12px"><input type="text" placeholder="      What are you looking for ?" style="height:35px;width:450px;border-radius:5px;border:0px;"></input>
+<img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:30px;margin-top:10px;margin-left:-5px"/></a>
+  <a href="#menu" style="margin-left:-20px">Orders</a>
+  <a href="#menu" style="margin-left:-2%">Sign In</a>
+  <a href="#menu" style="margin-left:-2%">Pincode</a>
+   <a href="#menu" style="margin-left:-2%"><span class="material-icons">
+shopping_cart
+</span></a>
+  
+  </div>
+</div>
+
+
+<div style="font-family:Material Icons">
+<div class="hc">
+<div class="home_cont">
+<img src="https://i.postimg.cc/sx0mCHP9/Screenshot-109.jpg" style="width:100%"/>
+<div class="slideshow-container" id="slide1">
+
+  
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/VvPJryHL/HP-Oppo-F19s-29-Sept-ndyszd.jpg" style="width:100%" />
+   
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/RC1FsDDK/HP-iphone13-series-with-HDFC-23sept-dvgvuj.jpg" style="width:100%" />
+    
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.postimg.cc/vBtszpZm/BP-Mi-Tv-Senso-Matic-17-Sept-yw5wmq.jpg" style="width:100%" />
+    
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+<img src="https://i.postimg.cc/zfftM67B/Screenshot-102.jpg" style="width:100%"/>
+
+
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+</script> 
+
+
+<p style="width:98%" id="bottomtext">
+
+Launched in 2006, first one-of-its kind large format specialist retail electronics store, Croma, caters to over 12 Million happy customers for all of their multi-brand digital gadgets and home electronics. Since its inception, Croma has become synonymous for all electronics needs, both online & in-store, with a wide product range and tech-savvy staff with a will to help customers throughout their buying journeys.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+With a promise of a ‘#Brighter Every Day’ to its customers, Croma offers a world-class ambience and seamless ‘omni-channel’ shopping experience to enjoy the best of both, the online shopping & the offline worlds. By availing Croma’s omni-channel services, as a customer, one can enjoy online shopping and have the product delivered at their doorstep or can avail the pick-up from a Croma store near me service. Customers can also opt for Zip Express delivery service that makes sure to deliver the product at their doorstep within 3 hours in select cities.
+
+
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+With over 200 brands and 190+ stores across 40+ major cities of India, Croma ensures fulfilling electronic needs of each customer, and that there is something for everyone.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+Whether you're setting up a new home or simply looking for an upgrade, Croma offers an eclectic range of electronics to suit your needs. Browse through an array of Home & Kitchen Appliances such as Air Conditioners, Refrigerators, Washing Machines, Vacuum Cleaners, Microwave, Air Fryers, Soup Makers, Cooktops, Dishwashers, Water Heaters and many more such product categories.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+You can also make upgrading easy with an all-inclusive collection of LED TV, Speakers & Sound Systems. So, whether you're looking at rekindling your lost hobby with a Digital Camera, or hoping to surprise your loved ones with the latest Mobile, Laptop, or Desktop, Croma is a one-stop shop solution for all your needs.
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+If that's not all, Croma also offers an assortment of various other product categories to simplify your life including Home Safety Security, Wired & Wireless Headphones, Earphones, Smart Wearable Devices and all kinds of Accessories.
+
+
+</p>
+
+
+
+<p style="width:98%" id="bottomtext">
+With an attempt to become a go-to destination for all electronic goods, Croma has set up a platform called Gadgets of Desire that showcases all the New@Croma, quick-pick & latest technology products. This section is specially curated to match expectations of every innovative gadget lover, tech-savvy customer or for those looking for unique gifting ideas. Gadgets of Desire focuses to satiate every fitness freak, travel lover, in-house DJ or a computer geek. Croma assures your #BrighterTomorrow begins today!
+
+</p>
+
+
+
+<p style="width:98%" id="bottomtext">
+
+To delight customers all along, Croma also launched its own label products in 2008. Brand Croma stands for Life More Beautiful; a promise based not just on the beauty in the way they look, but mainly as a value they offer to a customer’s life. This range is a perfect fit, especially for those who desire a completely feature-packed and quality product in a pocket friendly price range. Additionally, to ensure that customers enjoy their product to the fullest, Croma encourages purchase of Annual Maintenance Plans and Extended Warranty to safeguard their product against mishaps and accidental damages during or beyond brand warranty.
+
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+Croma also rewards customers with cashbacks and discounts as a part of Privileges Programme to get more for their money and exceptional after sales service. Members in this programme enjoy Loyalty Discounts, Pre-qualified Credit, Exchange & Upgrade Benefits, Assured Lifetime Service and 14 Day Fix/Replace Assurance on select Home Appliances and LEDs. To register, give a missed call on 1800-22-6699, and redeem exclusive benefits at the nearest Croma store or on www.croma.com! This programme also includes Gift Card, a solution that gives customers the freedom of choice between physical Gift Cards or e-Gift Vouchers of multiple denominations.
+</p>
+
+
+<p style="width:98%" id="bottomtext">
+
+Croma offers multiple payment gateways to select preferred payment option. A customer can choose from various payment modes like credit or debit cards, payment wallets and cash-on-delivery. Croma allows its customers to avail Easy EMI options on credit & debit cards or through available consumer finance options.
+
+</p>
+
+<p style="width:98%" id="bottomtext">
+
+Croma is a brand of Infiniti Retail Ltd., which is a wholly-owned subsidiary of Tata Sons, holding company of the Tata Group.
+</p>
+</body>
+</html>

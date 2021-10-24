@@ -737,6 +737,12 @@ function showwishproducts(wishlist)
 
         addtocart.setAttribute("id", "addtocart");
 
+        addtocart.onclick = function(){
+
+            addproduct(element);
+
+        }
+
         let DELETE= document.createElement('button');
 
         DELETE.setAttribute("id","DELETE");
@@ -797,6 +803,25 @@ function showwishproducts(wishlist)
         localStorage.setItem("wishlist",JSON.stringify(wishlist));
         showwishproducts(wishlist);
     }
+
+    function addproduct(product){
+
+
+    
+if(localStorage.getItem("Cromacart")==null)
+{
+    localStorage.setItem("Cromacart",JSON.stringify([]));
+}
+
+let arr = JSON.parse(localStorage.getItem("Cromacart"));
+
+arr.push(product);
+
+alert(`${product.Category} is added to your cart`);    
+
+localStorage.setItem("Cromacart",JSON.stringify(arr));
+
+}
 
     
    

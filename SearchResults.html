@@ -962,6 +962,12 @@ function showserproducts(d)
 
         buynow.textContent = "BUY NOW";
 
+        buynow.onclick = function(){
+
+           window.location.href = "checkoutimproved.html";
+
+        }
+
         buttons.append(addtocart,buynow);
 
         let star_Rating = "";

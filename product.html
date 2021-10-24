@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Croma Electronics | Online Electronics Shopping | Buy...</title>
+    <link rel="icon" href="https://www.croma.com/assets/croma-icon-192.png"/>
+  <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<style>
+
+body{
+	line-height: 1.5;
+	font-family: "Nunito",sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	
+	text-decoration: none;
+	font-weight: 300;
+	color:white;
+	display: block;
+	transition: all 0.3s ease;
+        width:140%;
+	margin-right:50px;
+	margin-left:0px;
+}
+.footer-col ul li a:hover{
+	color: teal;
+	
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+height:60%;
+width:20%;
+border:1px solid red;
+border-radius:3px;
+margin-right:15px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container1 {
+  padding: 2px 8px;
+
+}
+
+#image1{
+background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+height:65%;
+width:100%;
+border-radius:3px;
+text-align:right;
+}
+.big_container{
+
+display:flex;
+
+height:90%;
+width:100%;
+
+}
+        #container{
+            width: 92%;
+            height: 35%;
+            overflow-x: hidden;
+            margin: 5% 5%;
+            background-color: white;
+            border:1px solid green;
+
+        }
+
+        #content{
+            width: 200%;
+            height: 40%;
+            background-color:white;
+            overflow-y: hidden;
+	    position:relative;
+        }
+
+        #content{
+            display: flex;
+        }
+
+        #content > div{
+            width: 80%;
+            height: 350px;
+            margin: 0.4%;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 1px 1px 16px 1px rgb(231, 224, 224);
+            border: 0.5px rgb(231, 224, 224);
+        }
+       
+        #leftArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #rightArrow{
+            
+            width: 3%;
+            display: inline-block;
+        }
+
+        #leftArrow button, #rightArrow button{
+           
+            cursor: pointer;
+            font-size: 15px;
+            background-color:white;
+		 font-weight: bold;
+        }
+
+	.pre, .nex {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+
+.nex {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right:-2%;
+}
+.pre{
+margin-left:1%;
+}
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+}
+.navbar {
+  overflow: hidden;
+  background-color: teal;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  height:14%;
+  z-index:1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+    margin-top:1%;
+    margin-right:3%;
+
+}
+
+/* Change background on mouse-over */
+
+
+.main {
+  margin-top: 9%; /* Add a top margin to avoid content overlay */
+}
+
+.slideshow-container {
+   position: relative;
+   background: white;
+   width:100%;
+
+    margin-top:2%;
+    height:100%;
+}
+
+
+.mySlides {
+  display: none;
+  
+  text-align: center;
+
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0);
+  color: white;
+transition:3s;
+}
+
+
+
+.hc{
+
+margin-top:9%;
+}
+
+
+#bottomtext{
+line-height:25px;
+font-family:"Nunito",sans-serif;
+font-weight:200;
+color:#666;
+font-size:14px;
+margin-bottom:15px;
+margin-left:2%;
+
+}
+
+/* content */
+#sp-outer-box{
+    width: 1349px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+#sp-right-box{
+            width: 42.8%;
+            height: 100%;
+            margin-top: 10%;
+            overflow-y: scroll;
+            margin-left: 4.2%;
+            /* background-color: yellowgreen; */
+            background-color: white;
+            /* display: inline-block; */
+            /* vertical-align: top; */
+            display: inline-block;
+        }
+
+#sp-left-box{
+    width: 42%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 10%;
+     vertical-align: top;
+}
+
+/* right box css */
+#sp-product-name {
+            font-size: 140%;
+            line-height: 130%;
+            color: rgb(51, 51, 51);
+            font-weight: 700;
+            margin-bottom: 1%;
+            padding: 1% 3%;
+        }
+
+        .sp-product-id {
+            color: rgb(60, 60, 60);
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 1rem;
+            padding: 1% 3%;
+        }
+
+        #sp-review-text{
+            font-size: 80%;
+            color: #666666;
+            vertical-align:text-top;
+            margin-left: 10px;
+        }
+
+        #sp-price-box{
+            margin-top: 2%;
+        }
+
+        #sp-discounted-amount{
+            font-size: 150%;
+            color: #333333;
+            margin-left: 20px;
+        }
+
+        .sp-mrp-text{
+            font-size: 90%;
+            padding-left: 2.5%;
+            vertical-align: text-top;
+            color: #666666;
+        }
+
+        #sp-original-amount{
+            font-size: 80%;
+            color: #666666;
+            vertical-align: text-top;
+        }
+
+        .sp-tax-text{
+            color: #666666;
+            font-size: 80%;
+            vertical-align: text-top;
+        }
+        .sp-emi-amount{
+            padding-right: 3%;
+            font-size: 80%;
+            vertical-align: text-top;
+            text-align: center;
+        }
+
+        #sp-emi-info{
+            font-size: 90%;
+            color: #666666;
+            padding-left: 2%;
+            margin: 1%;
+        }
+
+        .sp-display-flex{
+            display: flex;
+            flex-direction: row;
+            padding-left: 2.5%;
+            width: 120%;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: normal;
+            margin-bottom: 2%;
+        }
+        
+        .sp-extra-savings{
+            margin-left: 1%;
+            font-size: 120%;
+            font-family: PTSerif-Bold;
+        }
+
+        .sp-offer-number-text{
+            margin-left: 1%;
+            font-size: 80%;
+            color: #66666666;
+        }
+
+        .sp-view-all-offers{
+            margin-left: 1%;
+            font-size: 80%;
+        }
+
+        .sp-offer-checkbox{
+            height: 2.7%;
+            width: 2.7%;
+            margin-left: 3%;
+            vertical-align: middle;
+        }
+
+        .sp-offer-text{
+            font-size: 80%;
+            color: #333333;
+        }
+        
+        .sp-opt-list{
+            width: 70%;
+            height: 23%;
+            margin: 1% 2% 4% 8%;
+            /* background-color: #333333; */
+        }
+
+        .sp-dashed{
+            border: 1px dashed #66666666;
+            margin: 3%;
+        }
+
+        .sp-bank-offer-text{
+            margin-left: 1%;
+            font-size: 80%;
+            color: #333333;
+            padding-right: 1%;
+        }
+
+        .sp-icici-logo{
+            vertical-align: middle;
+            /* width: 2%; 
+            height: 1%;  */
+            /* padding-left: 5%; */
+        }
+
+        hr{
+            color: #66666666;
+            width: 95%;
+        }
+
+        a{
+            color: #49A5A2;
+            text-decoration: none;
+        }
+
+        #sp-delivery-options-box{
+            width: 90%;
+            height: 20%;
+            margin: 6% 6%;
+            border-radius: 4px;
+            background-color: #F6F6F6;
+        }
+
+        .sp-del-header{
+            padding: 6% 5%;
+            font-family: PT Serif;
+            font-size: 130%;
+        }
+
+        .sp-shield-logo{
+            margin-left: 6%;
+            vertical-align: middle;
+        }
+        .sp-zip-text{
+            margin-left: 1%;
+            font-family: PT Serif;
+            font-size: 130%;
+        }
+
+       .sp-radio-button{
+            vertical-align: middle;
+            margin-left: 6%;
+        } 
+
+        .sp-warranty-period{
+            margin: 2%;
+        }
+
+        label{
+            display: block;
+            margin: 2%;
+        }
+
+        .sp-warranty-period-text{
+            font-size: 90%;
+            color: #333333;
+        }
+
+        .sp-info-icon{
+            vertical-align: middle;
+        }
+
+        .sp-add-to-cart-btn{
+            width: 80%;
+            height: 45%;
+            margin: 4% 12%;
+            padding: 1%;
+        }
+
+        .sp-add-to-cart{
+            width: 45%;
+            height: 15%;
+            border-radius: 25px;
+            border: none;
+            background-color: #005652;
+            color: white;
+        }
+
+        .sp-buy-now{
+            width: 40%;
+            height: 15%;
+            margin-left: 8%;
+            border-radius: 25px;
+            border: none;
+            background-color: #FFB900;
+        }
+
+        .sp-add-to-cart:hover{
+            box-shadow: 2% #7c7979;
+        }
+
+        .sp-rupee-icon{
+            padding-left:1.4%; 
+            width: 2%; 
+            height: 1%;
+        }
+
+        /* image zoomer */
+
+        .sp-container{
+            width: 390px;
+            height: 390px;
+            /* border: 2px solid black; */
+            position: relative;
+            margin: 20% 22%;
+        }
+
+        #sp-image{
+            width: 100%;
+            height: auto;
+        }
+
+        .sp-lens{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+            /* border: 2px solid black; */
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        .sp-result{
+            position: absolute;
+            left: calc(100% + 50px);
+            top: 30px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            background-repeat: no-repeat;
+            opacity: 0;
+        }
+
+        /* key features */
+
+        #sp-details{
+            margin: 5% 0%;
+        }
+
+        details{
+            padding: 1%;
+            width: 1200px;
+            border: 1px solid rgb(231, 224, 224);
+            margin: 1% 5%;
+            font-size: 20px;
+            box-shadow: 1px 1px 3px 4px rgb(231, 224, 224);
+            /* display: inline-block; */
+            position: relative;
+        }
+
+        @keyframes details-show {
+                from {
+                    opacity:0;
+                    transform: var(--details-translate, translateY(-0.9em));
+                }
+            }
+
+            details[open] > *:not(summary) {
+            animation: details-show 180ms ease-in-out;
+            }
+
+        details > summary {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            padding: 1.2%;
+            font-size: 22px;
+        }
+
+        details > summary::after {
+            content: url(icons8-expand-arrow-30.png);
+            width: 35px;
+            height: 38px;
+            display: inline-flex;
+            transition: transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        details[open] > summary::after {
+            transform: rotate(180deg);
+        }
+
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        p{
+            margin: 3%;
+        }
+
+        ul{
+            margin: 2%;
+            font-size: 16px;
+        }
+
+        li{
+            line-height: 28px;
+        }
+
+        /* start of first carousell */
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+
+                
+
+                .sp-containerhrsc {
+                    width: 95%;
+                    padding: 1rem;
+                    margin-left: 3rem;
+                }
+
+                .sp-containerhrsc h2{
+                    font-weight: 300;
+                    font-size: 200%;
+                    font-family: PT Serif;
+                    margin-bottom: 1rem;
+                    color: #333333;
+                }
+                
+                .sp-carousell-container{
+                    width: 97%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    border-radius: 0.2rem;
+                    background-color: white;
+                    border-radius: 0.2rem;
+                    overflow: hidden;
+                }
+                
+
+                .sp-carousell-container .sp-carousell-content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 0.5rem;
+                        transition: all 0.3s ease;
+                        transform: translateY(-50%);
+                }
+
+                .sp-carousell-content .sp-boxforsinglecard {
+                    width: 300px;
+                    height: 380px;
+                    background-color: white;
+                    margin-right: 1rem;
+                    /* padding: 1.2rem; */
+                    border-radius: 0.5rem;
+                    box-shadow: 1px 1px 16px 1px rgb(223, 204, 204);
+                    border: 0.5px rgb(231, 224, 224);
+                }
+
+                .sp-btn {
+                    position: absolute;
+                    top: 50%;
+                    width: 50px;
+                    height: 50px;
+                    border: 50%;
+                    border-radius: 50%;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    transform: translateY(-50%) scale(0.5);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                    background-color:white;
+                }
+
+                .sp-btn.sp-show {
+                    transform: translateY(-50%) scale(1);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .sp-btn.sp-left {
+                    left: 0.1rem;
+                }
+
+                .sp-btn.sp-right {
+                    right: 0.1rem;
+                }
+    /*# sourceMappingURL=final-scroll.sass.css.map */
+            #sp-image1{
+
+    height:70%;
+    width:100%;
+    border-radius:3px;
+    text-align:right;
+    background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+    }
+
+    .sp-cardsinglecard{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height:100%;
+    width:100%;
+
+    border-radius:3px;
+    margin-right:15px;
+    }
+    .sp-boxforsinglecard{
+
+    height:420px;
+    width:300px;
+    }
+
+    .sp-containerofsinglecard
+    {
+    margin-left:4%;
+    }
+
+     /* start of second carousell */
+            
+     * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                }
+
+                
+
+                .sps-containerhrsc {
+                    width: 95%;
+                    padding: 1rem;
+                    margin-left: 3rem;
+                }
+
+                .sps-containerhrsc h2{
+                    font-weight: 300;
+                    font-size: 200%;
+                    font-family: PT Serif;
+                    margin-bottom: 1rem;
+                    color: #333333;
+                }
+                
+                .sps-carousell-container{
+                    width: 97%;
+                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    border-radius: 0.2rem;
+                    background-color: white;
+                    border-radius: 0.2rem;
+                    overflow: hidden;
+                }
+                
+
+                .sps-carousell-container .sps-carousell-content {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 0.5rem;
+                        transition: all 0.3s ease;
+                        transform: translateY(-50%);
+                }
+
+                .sps-carousell-content .sps-boxforsinglecard {
+                    width: 300px;
+                    height: 380px;
+                    background-color: white;
+                    margin-right: 1rem;
+                    /* padding: 1.2rem; */
+                    border-radius: 0.5rem;
+                    box-shadow: 1px 1px 16px 1px rgb(223, 204, 204);
+                    border: 0.5px rgb(231, 224, 224);
+                }
+
+                .sps-btn {
+                    position: absolute;
+                    top: 50%;
+                    width: 50px;
+                    height: 50px;
+                    border: 50%;
+                    border-radius: 50%;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    transform: translateY(-50%) scale(0.5);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 0.3s ease;
+                    background-color:white;
+                }
+
+                .sps-btn.sps-show {
+                    transform: translateY(-50%) scale(1);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .sps-btn.sps-left {
+                    left: 0.1rem;
+                }
+
+                .sps-btn.sps-right {
+                    right: 0.1rem;
+                }
+    /*# sourceMappingURL=final-scroll.sass.css.map */
+            #sps-image1{
+
+    height:70%;
+    width:100%;
+    border-radius:3px;
+    text-align:right;
+    background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+    }
+
+    .sps-cardsinglecard{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height:100%;
+    width:100%;
+
+    border-radius:3px;
+    margin-right:15px;
+    }
+    .sps-boxforsinglecard{
+
+    height:420px;
+    width:300px;
+    }
+
+    .sps-containerofsinglecard
+    {
+    margin-left:4%;
+    }
+
+    .checked{
+        color: orange;
+        /* border: 1px solid black; */
+    }
+    .unchecked{
+        /* border: 1px solid black; */
+        color: grey;
+    }
+    #output{
+        width: 454px;
+        margin-left: 29.5%;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 60px;
+        max-height: 300px;
+        overflow-y: scroll;
+        z-index: 1;
+        position: fixed;
+    }
+    #output::-webkit-scrollbar {
+    display: none;
+    }
+    #output  p{
+        padding-left: 34px;
+        font-size: 20px;
+        height: 20px;
+        margin-top: auto;
+        display: table-footer-group;
+    }
+    #output a {
+        color: #333 !important;
+        text-decoration: inherit;
+
+    }
+
+    #searchbar {
+        border-radius: 0.5rem;
+        font-size: 20px;
+        padding-left: 50px;
+        background-color: white;
+    }
+
+
+</style>
+</head>
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <path
+        d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+        fill="#2874F0" class="eX72wL" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- start of header-->
+<div class="navbar" style="text-align:center">
+    <div style="margin-bottom:20px">
+   <a href="#home" style="margin-top:2px;margin-left:7.8px"><img src="https://i.postimg.cc/Wb8fn0cT/Screenshot-103.jpg" style="width:143.5px; height:44.5px;"/></a>
+   <a href="#menu"><span class="material-icons" >
+ menu
+ </span></a>
+ <a style="margin-left:-30px">Menu</a>
+   <a style="margin-right:0px;margin-top:2px"><input type="text" placeholder="What are you looking for ?"  id = "searchbar" style="height:35px;width:450px;border-radius:5px;border:0px;padding-left:20px;"></input>
+ </a>
+ <a><img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:34.5px;margin-top:-11px;margin-left:-95px; border-radius: 3px;"/></a>
+   <a href="#menu" style="margin-left:-50px">Orders</a>
+   <a href="#menu" style="margin-left:-2%">Sign In</a>
+   <a href="#menu" style="margin-left:-2%">Pincode</a>
+    <a href="#menu" style="margin-left:-2.5%"><span class="material-icons">
+ shopping_cart</span></a>
+
+ <div id = "output"></div>
+
+   </div>
+ </div>
+ <!--end of header-->
+
+<div id="sp-outer-box">
+        <div id="sp-left-box">
+            <!-- image zoomer -->
+            <div class="sp-container">
+                <img id="sp-image"/>
+                <div class="sp-lens"></div>
+                <div class="sp-result"></div>
+            </div>
+        </div>
+        <div id="sp-right-box">
+            <!--Product heading -->
+            <h1 id="sp-product-name"></h1>
+                <!-- review stars and text -->
+                <div id = "star" style="display: inline-block; margin-left: 20px;"></div>
+                <span id="sp-review-text"></span>
+            
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime et quidem sequi reiciendis eos id facilis eum! Voluptatem iste, aliquam qui illo labore ipsa! Excepturi perferendis beatae ad. Dolor praesentium nam, velit voluptates quod recusandae quia est. Porro ipsam adipisci eaque quibusdam architecto! Perferendis saepe doloribus officia, dolorum enim ipsam fugit unde cupiditate fuga. Sapiente vitae eligendi illo quibusdam explicabo! Ab, provident culpa, eum sed odio sit voluptatem ipsa maxime distinctio impedit natus delectus mollitia minus est omnis suscipit, illum non eligendi praesentium! Minima modi nulla placeat suscipit perferendis quibusdam delectus saepe, culpa similique exercitationem aperiam aliquid commodi ducimus eum magni ea veritatis praesentium explicabo iusto velit eaque! Eos repellendus non suscipit autem alias quidem porro veritatis at quas similique, fugiat aliquam? Magni error, ex illo ut enim accusantium modi quos, rerum iste nam ratione quisquam. Quia, doloremque? Esse eos cumque doloribus quae, nihil illum iste animi neque. Fugiat expedita, doloribus animi facilis illo autem omnis ab dignissimos magni voluptas quasi, ipsam quae. Ratione consequatur quaerat assumenda quia quisquam atque libero ad, modi porro pariatur eos possimus? Dolorum architecto recusandae qui aspernatur, sit illum, nostrum esse cum neque repudiandae quisquam necessitatibus totam eos, vitae odit earum nesciunt quia quod debitis asperiores! Natus repellat asperiores mollitia pariatur quae voluptates distinctio, nostrum laudantium sint aut, molestias ratione doloremque? Velit, adipisci blanditiis! Perferendis similique optio saepe eum atque facilis, aut, amet cum iste autem doloremque maiores magnam dolores, deserunt ad iusto voluptatem illum voluptas labore nobis non voluptatum natus ullam? A vel dolore rem enim consequatur voluptas nisi similique sequi. Aspernatur ipsa aliquam perferendis facere natus id rerum non ipsam consequuntur accusantium cumque optio voluptate, nisi quam minus ratione totam esse architecto harum, incidunt cupiditate tempore magni hic? Rem quo id earum asperiores natus, maxime iure? Corporis at dolorum nisi doloribus quam praesentium impedit ullam laudantium perferendis similique aliquam consectetur odio esse, neque incidunt iste. Voluptates, dolores enim veritatis doloribus explicabo magnam nobis earum ut doloremque exercitationem dolorum eos. Quos a veniam totam voluptas error suscipit cumque deserunt quas eligendi nemo! Praesentium, debitis officia. Quas dolorum iste optio non ut quisquam hic obcaecati modi quos ea fugit nostrum exercitationem repudiandae, id quidem delectus libero, nulla impedit nisi eos eius alias minus. Provident exercitationem sunt obcaecati voluptas ipsam magni ad explicabo, nihil optio minima? Numquam obcaecati veritatis vero harum velit! Expedita repellat eum rem ratione assumenda! Doloribus quaerat nulla natus amet distinctio enim dolores id nihil, repellat adipisci at, ad commodi, exercitationem deleniti nesciunt porro! Consequatur sed maiores fugit saepe numquam excepturi iusto commodi, ut possimus aliquid voluptatibus magni obcaecati veritatis laboriosam similique asperiores? Molestias ullam sunt unde blanditiis in quas optio ea distinctio natus sed, aliquam tempore error corporis ipsam assumenda. Quia cum sequi cumque nisi numquam voluptatibus recusandae amet tempore ratione? Adipisci veritatis, praesentium minima deleniti labore ea commodi reprehenderit tempora nesciunt sunt quisquam natus expedita soluta aperiam consectetur, fugiat pariatur aspernatur, corporis sapiente excepturi ratione alias? Consectetur rem quae rerum eos praesentium obcaecati beatae perspiciatis tempora! Magnam quod explicabo earum blanditiis!</p> -->
+            
+            <!-- price box  -->
+            <div id="sp-price-box">
+                <span id="sp-discounted-amount"></span>
+                <span class="sp-mrp-text">MRP</span>
+                <span id="sp-original-amount"></span>
+                <span class="sp-tax-text">(Inclusive of all taxes)</span>
+            </div> 
+            
+            <!-- EMI Info -->
+            <p id="sp-emi-info">EMI starting at 
+                <span class="sp-rupee-icon">
+                    <span class="sp-emi-amount">₹2,817</span>
+                </span>
+                <a href="#" class="sp-emi-options">SEE EMI OPTIONS</a>
+            </p>
+
+            <!-- Extra Savings -->
+            <span class="sp-display-flex">
+                <span class="sp-extra-savings-logo"><img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/extra-savings.png/mxw_2048,f_auto" style="vertical-align: middle;"></span>
+                <span class="sp-extra-savings">Extra Savings</span>
+                <span class="sp-offer-number-text">(7 Offers)</span>
+                <span class="sp-view-all-offers"><a href="#">View All Offers</a></span>
+            </span>
+
+            <hr />
+            <!-- offers -->
+            <input type="checkbox" class="sp-offer-checkbox">
+            <span class="sp-offer-text">Buy & Get 5% off on Sony 5.1 Channel Soundbar (Discount auto applied in cart)</span>
+
+            <!-- offer option list -->
+            <hr class="sp-dashed">
+
+            <!-- bank offer text -->
+            <span class="sp-bank-offer-text" style="margin-left: 6%;">No cost EMI upto 12 months tenure. T&C apply.</span><a href="#" style="font-size: 75%;">Learn more</a>
+            <hr class="sp-dashed">
+            <span class="sp-icici"><img src="icici-logo.png" class="sp-icici-logo"></span>
+            <span class="sp-bank-offer-text" style="margin-left: 1%;">Rs 500 discount on Tx of 10,000 & above with ICICI Credit Card T&C Apply.</span><a href="#" style="font-size: 75%;">Learn more</a>
+            <hr class="sp-dashed">
+            <span class="icici"><img src="icici-logo.png" class="sp-icici-logo"></span>
+            <span class="sp-bank-offer-text" style="margin-left: 1%;">Rs 1000 discount on Tx of 15,000 & above with ICICI Credit cards T&C Apply.</span><a href="#" style="font-size: 75%;">Learn more</a>
+            <hr class="sp-dashed">
+
+            <!-- Delivery options box -->
+            <div id="sp-delivery-options-box">
+                <div class="sp-del-header">Delivery Options for 
+                    <a href="#" style="font-size: 75%; padding-left: 2%; font-family: PT Serif;">410210</a>
+                <a href="#" style="font-size: 65%; padding-left: 3%;">Change</a>
+            </div>
+
+            <!-- will do this later -->
+            <span class="sp-del-icon"></span>
+            </div>
+
+            <!-- ZIP Protection Plan -->
+            <span class="sp-shield-logo"><img src="shield-image.png"></span>
+            <span class="sp-zip-text">ZIP Protection Plan</span>
+            <hr>
+            
+            <div class="sp-warranty-period">
+            <label>
+                <span class="sp-radio-button"> <input type="radio"></span>
+                    <span class="sp-warranty-period-text">1 Year Extended Warranty-Onsitego</span>
+                    <span><a href="#"><img src="info-icon.png" class="sp-info-icon"></a></span>
+                </label>
+            <label>
+                <span class="sp-radio-button"> <input type="radio"></span>
+                    <span class="sp-warranty-period-text">2 Year Extended Warranty-Onsitego</span>
+                    <span><a href="#"><img src="info-icon.png" class="sp-info-icon"></a></span>
+                </label>
+            <label>
+                    <span class="sp-radio-button"> <input type="radio"></span>
+                    <span class="sp-warranty-period-text">3 Year Extended Warranty-Onsitego</span>
+                    <span><a href="#"><img src="info-icon.png" class="sp-info-icon"></a></span>
+            </label>    
+            </div>
+        
+        <!-- Add to cart button container -->
+        
+            <div class="sp-add-to-cart-btn">
+                <button class="sp-add-to-cart">ADD TO CART</button>
+                <button class="sp-buy-now">BUY NOW</button>
+            </div>
+            </div>
+    </div>
+
+</div>
+<!-- key features -->
+<div id="sp-details">
+    <details>
+        <summary>Key Features</summary>
+        <div class="sp-details-content">
+            <p>
+                <ul>
+                    <li>108 cm (43"), Ultra HD 4K TV</li>
+                    <li>Android Smart TV, Android 10</li>
+                    <li>20 Watts | Dual Speakers | Dolby Audio</li>
+                    <li>2 x USB | 3 x HDMI | 1 x Optical Audio Output</li>
+                    <li>Ideal Viewing Distance: 6 - 8 Ft</li>
+                    <li>12 Months Warranty</li>
+                </ul>
+            </p>
+        </div>
+    </details>
+    
+    
+    
+    <details>
+        <summary>Specifications</summary>
+        <div class="sp-details-content">
+            <p>
+                <ul>
+                    <li>108 cm (43"), Ultra HD 4K TV</li>
+                    <li>Android Smart TV, Android 10</li>
+                    <li>20 Watts | Dual Speakers | Dolby Audio</li>
+                    <li>2 x USB | 3 x HDMI | 1 x Optical Audio Output</li>
+                    <li>Ideal Viewing Distance: 6 - 8 Ft</li>
+                    <li>12 Months Warranty</li>
+                </ul>
+            </p>
+        </div>
+    </details>
+    
+    
+    
+    <details>
+        <summary>Overview</summary>
+        <div class="sp-details-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis eius minus numquam, ipsam est nemo ut consectetur. Distinctio, laboriosam soluta. Amet officiis at odio similique deleniti sed saepe velit!</p>
+        </div>
+    </details>
+    
+    
+    
+    <details>
+        <summary>Review</summary>
+        <div class="sp-details-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis eius minus numquam, ipsam est nemo ut consectetur. Distinctio, laboriosam soluta. Amet officiis at odio similique deleniti sed saepe velit!</p>
+        </div>
+    </details>
+</div>
+
+
+<!-- start of first carousell -->
+
+<div class="sp-containerhrsc">
+
+    <h2>Similar Products</h2>
+
+    <div class="sp-carousell-container">
+
+        <div class="sp-carousell-content" id="sp-carousellContent">
+
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+                
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+                
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+                
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+                
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+                
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+            
+
+                
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+                <div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+
+           
+
+        </div>
+
+        <div class="sp-controls">
+            <button class="sp-btn sp-left sp-show" id="sp-carousellLeftBtn">&lt;</button>
+            <button class="sp-btn sp-right sp-show" id="sp-carousellRightBtn">&gt;</button>
+
+        </div>
+    </div>
+
+
+</div>
+
+<!-- start of second carousell -->
+
+<div class="sps-containerhrsc">
+
+    <h2>People also bought</h2>
+
+    <div class="sps-carousell-container">
+
+        <div class="sps-carousell-content" id="sps-carousellContent">
+
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+                
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+                
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+                
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+                
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+                
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+            
+
+                
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+                <div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
+                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
+                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
+                                         </div>
+                   </div>
+                       
+                </div>
+
+
+
+
+           
+
+        </div>
+
+        <div class="sps-controls">
+            <button class="sps-btn sps-left sps-show" id="sps-carousellLeftBtn">&lt;</button>
+            <button class="sps-btn sps-right sps-show" id="sps-carousellRightBtn">&gt;</button>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- start of footer -->
+ <div style="width:100%"></div>
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+
+			<div class="footer-col">
+				<h4>CONNECT WITH US</h4>
+				<input type="email" placeholder="Enter Email Id" style="height:50px;border:0px;border-radius:9px;width:230px;padding:20px"></input><button type="submit" style="border:0px;width:60px;cursor:pointer;height:50px;margin-left:-60px;border-radius:9px;background-color:transparent;color:grey"> → </button>	
+				<div class="social-links">
+				</br>
+					<img src="https://i.postimg.cc/zvBmkMXn/Screenshot-110.jpg" style="width:100%"/>
+				</div>
+</br>
+</br>
+				<p style="color:white">© Copyright 2021 Croma. All rights reserved</p>
+			</div>
+
+  	 		<div class="footer-col">
+  	 			<h4>USEFUL LINKS</h4>
+				<div class="footerflex" style="display:flex;">
+  	 			 <ul>
+  	 				<li><a href="#">About Croma</a></li>
+  	 				<li><a href="#">Help And Support</a></li>
+  	 				<li><a href="#">FAQs</a></li>
+  	 				<li><a href="#">Order Support</a></li>
+					<li><a href="#">Bulk Enquiry</a></li>
+					<li><a href="#">Store Locator</a></li>
+					<li><a href="#">Delightful Programmes</a></li>
+  	 			 </ul>
+				
+				   <ul style="margin-left:50px;">
+					<li><a href="#">E-Care</a></li>
+					<li><a href="#">Franchise Opportunity</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">Careers At Croma</a></li>
+				 	<li><a href="#">Terms Of Use</a></li>
+				 	<li><a href="#">Disclaimer</a></li>
+				 	<li><a href="#">Privacy Policy</a></li>
+				   </ul>
+				</div>
+
+  	 		</div>
+  	 		<div class="footer-col" style="margin-left:15%">
+				<h4>PRODUCTS</h4>
+				<div class="footerflex" style="display:flex;">
+  	 			 <ul>
+  	 				<li><a href="#">Televisions and Accesories</a></li>
+  	 				<li><a href="#">Home Appliances</a></li>
+  	 				<li><a href="#">Phones & Wearables</a></li>
+  	 				<li><a href="#">Order Support</a></li>
+					<li><a href="#">Computers & Tablets</a></li>
+					<li><a href="#">Kitchen Appliances</a></li>
+					<li><a href="#">Audio & Video</a></li>
+  	 			 </ul>
+				
+				   <ul style="margin-left:20%">
+					<li><a href="#">E-Care</a></li>
+					<li><a href="#">Franchise Opportunity</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">Careers At Croma</a></li>
+				 	<li><a href="#">Terms Of Use</a></li>
+				 	<li><a href="#">Disclaimer</a></li>
+				 	<li><a href="#">Privacy Policy</a></li>
+				   </ul>
+				</div>
+
+  	 		</div>
+  	 		
+  	 	</div>
+  	 </div>
+  </footer>
+
+
+
+  <script>
+    //   image zoomer script
+
+    const container = document.querySelector(".sp-container");
+        const image = document.querySelector("#sp-image");
+        const lens = document.querySelector(".sp-lens");
+        const result = document.querySelector(".sp-result");
+
+
+        container.addEventListener("mouseenter", enableResult);
+        container.addEventListener("mouseleave", disableResult);
+
+        function enableResult(){
+            result.style.opacity = "1";
+        }
+
+        function disableResult(){
+            result.style.opacity = "0";
+        }
+
+        const containerRect = container.getBoundingClientRect();
+        const imageRect = image.getBoundingClientRect();
+        const lensRect = lens.getBoundingClientRect();
+        const resultRect = result.getBoundingClientRect();
+
+        container.addEventListener("mousemove", zoomImage);
+        result.style.backgroundImage =  "url('" + image.src + "')";
+
+        function zoomImage(e){
+            console.log("zoom: ", e.clientX, e.clientY);
+            const { x, y } = getMousePos(e);
+            console.log(x, y);
+            lens.style.left = x + "px";
+            lens.style.top = y + "px";
+
+            let fx = resultRect.width / lensRect.width;
+            let fy = resultRect.height / lensRect.height;
+            result.style.backgroundSize = (imageRect.width * fx) + "px" +  (imageRect.height * fy) + "px";
+            result.style.backgroundPosition = "-" + (x * fx) + "px -" + (y * fy) + "px";
+        }
+
+        function getMousePos(e){
+            let x = e.clientX - containerRect.left - (lensRect.width/2);
+            let y = e.clientY - containerRect.top - (lensRect.height/2);
+
+            let minX = 0;
+            let minY = 0;
+            let maxX = containerRect.width - lensRect.width;
+            let maxY = containerRect.height - lensRect.height;
+
+            if(x <= minX){
+                x = minX;
+            }
+            else if(x >= maxX) {
+                x = maxX;
+            }
+
+            if(y <= minY){
+                y = minY;
+            }
+            else if(y >= maxY) {
+                y = maxY;
+            }
+
+            return { x, y };
+        }
+            
+        // script for first carousell
+
+        let k1=0;
+        (function() {
+            var carousellContent = document.querySelector('#sp-carousellContent');
+            var carousellLeftBtn = document.querySelector('#sp-carousellLeftBtn');
+            var carousellRightBtn = document.querySelector('#sp-carousellRightBtn');
+
+            var carousellLeftValue = 0;
+            var totalWidth = carousellContent.getBoundingClientRect().width;
+            var widthToMove = 300 + 16 + 300 + 16;
+            var arrowBtnWidth = 50;
+            var noOfSlides = (totalWidth / widthToMove);
+            var currentSlide = 1;
+
+            carousellLeftBtn.addEventListener('click', moveCarousellRight);
+            carousellRightBtn.addEventListener('click', moveCarousellLeft);
+            manageButtons();
+            
+            function moveCarousellLeft(){
+	if(k1<2){
+                if(currentSlide == 1)
+                {
+                    carousellLeftValue -= widthToMove - arrowBtnWidth;
+                } 
+                else
+                {
+                    carousellLeftValue -= widthToMove;
+                }
+
+                currentSlide++;
+                manageButtons();
+
+                carousellContent.style.left = `${carousellLeftValue}px`;
+			k1++;
+		}
+            }
+
+            function moveCarousellRight(){
+              if(k1>0){  
+                if(currentSlide == 2)
+                {
+                    carousellLeftValue = 8;
+                } 
+                else
+                {
+                    carousellLeftValue += widthToMove;
+                }
+
+                currentSlide--;
+                manageButtons();
+
+                carousellContent.style.left = `${carousellLeftValue}px`;
+			k1--;
+		}
+            }
+
+            function manageButtons(){
+                if (currentSlide == noOfSlides - 1)
+                {
+                    carousellRightBtn.classList.remove("sp-show");
+                }
+                else
+                {
+                    carousellRightBtn.classList.add("sp-show");
+                }
+
+                if (currentSlide == 1)
+                {
+                    carousellLeftBtn.classList.remove("sp-show");
+                }
+                else
+                {
+                    carousellLeftBtn.classList.add("sp-show");
+                }
+            }
+
+        })();
+            
+
+
+        // script for second carousell
+
+        let k2=0;
+        (function() {
+            var carousellContent = document.querySelector('#sps-carousellContent');
+            var carousellLeftBtn = document.querySelector('#sps-carousellLeftBtn');
+            var carousellRightBtn = document.querySelector('#sps-carousellRightBtn');
+
+            var carousellLeftValue = 0;
+            var totalWidth = carousellContent.getBoundingClientRect().width;
+            var widthToMove = 300 + 16 + 300 + 16;
+            var arrowBtnWidth = 50;
+            var noOfSlides = (totalWidth / widthToMove);
+            var currentSlide = 1;
+
+            carousellLeftBtn.addEventListener('click', moveCarousellRight);
+            carousellRightBtn.addEventListener('click', moveCarousellLeft);
+            manageButtons();
+            
+            function moveCarousellLeft(){
+	if(k2<2){
+                if(currentSlide == 1)
+                {
+                    carousellLeftValue -= widthToMove - arrowBtnWidth;
+                } 
+                else
+                {
+                    carousellLeftValue -= widthToMove;
+                }
+
+                currentSlide++;
+                manageButtons();
+
+                carousellContent.style.left = `${carousellLeftValue}px`;
+			k2++;
+		}
+            }
+
+            function moveCarousellRight(){
+              if(k2>0){  
+                if(currentSlide == 2)
+                {
+                    carousellLeftValue = 8;
+                } 
+                else
+                {
+                    carousellLeftValue += widthToMove;
+                }
+
+                currentSlide--;
+                manageButtons();
+
+                carousellContent.style.left = `${carousellLeftValue}px`;
+			k2--;
+		}
+            }
+
+            function manageButtons(){
+                if (currentSlide == noOfSlides - 1)
+                {
+                    carousellRightBtn.classList.remove("sps-show");
+                }
+                else
+                {
+                    carousellRightBtn.classList.add("sps-show");
+                }
+
+                if (currentSlide == 1)
+                {
+                    carousellLeftBtn.classList.remove("sps-show");
+                }
+                else
+                {
+                    carousellLeftBtn.classList.add("sps-show");
+                }
+            }
+
+        })();
+
+    let requested_product = window.location.hash.split('=')[1].split("%20").join(' ').trim();
+
+    let croma_data = JSON.parse(localStorage.getItem("CromaProducts"));
+    
+    croma_data.forEach(element => {
+        if(element.Name==requested_product)
+        {
+            requested_product = element;
+        }
+    });
+
+    
+    let pname = document.getElementById("sp-product-name");
+    
+    pname.textContent = requested_product.Name;
+
+    //  console.log(pname);
+
+    let star = document.getElementById("star");
+
+    let star_Rating = "";
+
+        for (let i = 1; i <= 5; i++) {
+            if (i < (Math.floor(requested_product.Rating) + 1)) {
+                star_Rating += '<span class = "fa fa-star checked"></span>';
+
+            } else {
+                star_Rating += '<span class = "fa fa-star unchecked"></span>';
+
+            }
+        }
+        star.innerHTML = star_Rating;
+
+        let review = document.getElementById("sp-review-text")
+
+        review.textContent = "("+requested_product.Rating_Review_count + "Reviews)"
+
+        let newprice = document.getElementById("sp-discounted-amount");
+
+        newprice.textContent = "₹"+requested_product.New_Price;
+
+        let oldprice = document.getElementById("sp-original-amount");
+
+        if(requested_product.Old_Price != "")
+        {
+
+            oldprice.textContent = "₹"+requested_product.Old_Price;
+
+        }
+        else
+        {
+
+            oldprice.textContent = "₹"+requested_product.New_Price;
+
+
+        }
+
+        let productimage = document.getElementById("sp-image");
+
+        productimage.src = requested_product.Image;
+
+
+        let searchbar = document.getElementById('searchbar');
+  
+  let data =  JSON.parse(localStorage.getItem("CromaProducts"));
+
+    searchbar.addEventListener('keyup', (e) => {
+        let searchString = e.target.value.toLowerCase();
+        let matchedData =[];
+        let tempData = {}
+        if (searchString != '') {
+             matchedData = data.filter(product => {
+                 if(product.Category.includes(searchString) || product.Brand.includes(searchString)){
+                    //  console.log(matchedData.length)
+                    // console.log()
+                    return true
+                }else{
+                    return false
+                }
+
+                // return (product.Category.includes(searchString) || product.Brand.includes(searchString))
+                // console.log(e.Category)
+    
+            });
+            if (matchedData.length > 0) {
+    
+                displayProducts(matchedData);
+            }
+            else {
+                let output = document.getElementById("output")
+                output.innerHTML = '';
+            }
+        }
+        else {
+            let output = document.getElementById("output")
+            output.innerHTML = '';
+        }
+    });
+
+    // Displaying the search results
+    
+    let output = document.getElementById("output")
+
+    let displayProducts = (product) => {
+
+        let matchingProduct = product.map((product) => {
+
+            return `
+            <p class = "selectedResult"><a href = "./SearchResults.html#category=${product.Category}#brand=${product.Brand}">${product.Brand} ${product.Category}</a></p>`;
+        }).join('');
+
+        output.innerHTML = matchingProduct;
+    }
+  </script>
+
+</body>
+</html>

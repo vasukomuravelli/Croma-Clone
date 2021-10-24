@@ -1,7 +1,7 @@
 # croma
 Croma project is a learning project to learn the intricacies of creating a live website from scratch using html/css and javascript..
 
-The following features were implemented and is working perfectly like a charm
+The following features were implemented and are working perfectly 
 
 1) email OTP verification of users..( login system where users enter their email and an otp is sent to their email for signing in)
 2) search functionality (users can search for a particular product and results will be shown accordingly)

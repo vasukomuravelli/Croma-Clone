@@ -335,7 +335,7 @@ margin-top:9%;
         position: fixed;
     }
     #output::-webkit-scrollbar {
-    display: none;
+        display: none;
     }
     #output  p{
         padding-left: 34px;
@@ -950,6 +950,12 @@ function showserproducts(d)
 
         addtocart.setAttribute("id", "addtocart");
 
+        addtocart.onclick = function(){
+
+            addproduct(element);
+
+        }
+
         let buynow = document.createElement('button');
 
         buynow.setAttribute("id","buynow");
@@ -1064,6 +1070,24 @@ function addtowishlist(product){
 
     localStorage.setItem("wishlist",JSON.stringify(arr));
 
+}
+
+function addproduct(product){
+
+
+    
+    if(localStorage.getItem("Cromacart")==null)
+    {
+        localStorage.setItem("Cromacart",JSON.stringify([]));
+    }
+
+    let arr = JSON.parse(localStorage.getItem("Cromacart"));
+
+    arr.push(product);
+    
+    alert(`${product.Category} is added to your cart`);    
+
+    localStorage.setItem("Cromacart",JSON.stringify(arr));
 
 }
 

@@ -118,6 +118,7 @@ ul{
             }
             .details_p{
                 margin-left:10px;
+                margin-top: 10px;
             }
 
 
@@ -430,8 +431,49 @@ margin-left:2%;
   margin-top: 75px;
 }
 
+.item ccard{
+  display: flex;
+  justify-content: space-between;
+}
 
-
+#addToWishlist{
+  background-color: #ffb900;
+  border: 1px solid #ffb900;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 5px;
+  text-align: center;
+  width: 180px;
+  height: 50px;
+  
+}
+#addToWishlist:hover{
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
+}
+#DELETE:hover{
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.4);
+}
+#DELETE{
+  
+  background-color: teal;
+  border: 1px solid teal;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+  margin-left: 5px;
+  margin-top: 20px;
+  text-align: center;
+  text-align: center;
+  width: 180px;
+  height: 50px;
+}
+.buttons{
+  position: absolute;
+  margin-top: 30px;
+  right: 55px;
+}
 
 
 
@@ -464,54 +506,7 @@ shopping_cart</span></a>
  <!--beginning of cart-->
 <div class="bottomcontainer_payment">
 
-<div id="itemlist_p" style=" width:70%;">
-
-    <div class="item ccard">
-
-        <div class="img_p">
-                <img src="https://i.postimg.cc/R0G7y7hk/8960325517342.png"/>
-        </div>
-
-        <div class="details_p">
-               
-            <h4>LG C1 139cm (55 Inch) Ultra HD 4K OLED Smart TV (Voice Assistant Supported, OLED55C1XTZ, PCM Black)</h4>
-            <p>Product Id #19234</p>
-            <p> Quantity 1</p>
-            <h4>Rs 250000</h4>
-        </div>
-
-        <div class="icon_p">
-
-        </div>
-
-    </div>
-
-
-
-
-
-    <div class="item ccard">
-
-        <div class="img_p">
-                <img src="https://i.postimg.cc/R0G7y7hk/8960325517342.png"/>
-        </div>
-
-        <div class="details_p">
-               
-            <h4>LG C1 139cm (55 Inch) Ultra HD 4K OLED Smart TV (Voice Assistant Supported, OLED55C1XTZ, PCM Black)</h4>
-            <p>Product Id #19234</p>
-            <p> Quantity 1</p>
-            <h4>Rs 250000</h4>
-        </div>
-
-        <div class="icon_p">
-
-        </div>
-
-    </div>
-
-
-</div>
+<div id="itemlist_p" style=" width:70%; position: relative;"></div>
 
 <div class="payment-right" style="margin-right:5%;width:25%;margin-top: 15px;">
     <div class="payment options ccard" style="margin-left:15px;padding:15px; width: 386px;">
@@ -530,10 +525,10 @@ shopping_cart</span></a>
 
     <div class="Payment_details ccard" style="margin:5%;padding:7px;">
         <h2>Payment Details</h2></br></br>
-        <label>Item total: Rs 500000 </label></br></br>
-        <label>Delivery Cost: Rs 3000</label></br></br>
+        <label id = "order_total"></label></br></br>
+        <label id="delivery"></label></br></br>
     </hr>
-        <label>Total Price: 503000</label></br></br>
+        <label id="total"></label></br></br>
         <button id="myBtn" style="color:teal;padding:5px;border:0px;height:25px;">Checkout</button>
     </div>
 </div>
@@ -616,6 +611,111 @@ shopping_cart</span></a>
     if (event.target == modal) {
       modal.style.display = "none";
     }
+  }
+  let string = "";
+
+  let products = document.querySelector("#itemlist_p");
+
+  let cart = JSON.parse(localStorage.getItem("Cromacart"));
+
+  let total = 0;
+
+  showcartproducts(cart);
+
+  function showcartproducts(cart)
+  {
+      cart.forEach(element => {
+
+        total += Number(element.New_Price);
+        
+        string += `<div class="item ccard">
+      
+      <div class="img_p">
+              <img src=${element.Image}/>
+      </div>
+      
+      <div class="details_p">
+            
+          <h4>${element.Name}</h4>
+          <p>${element.Category}</p>
+          <p> Quantity 1</p>
+          <h4>₹${element.New_Price}</h4>
+      </div>
+      
+      <div class="buttons">
+        <button onclick = "addtowishlist(${element})" id = "addToWishlist">Add to Watchlist</button><br/>
+        <button onclick = "deletefromcart(${element})" id = "DELETE">Delete</button>
+      </div>
+      
+      </div>`;
+      });
+
+    products.innerHTML = string;
+
+    let sum = document.getElementById("order_total");
+
+    sum.innerText = "Items total : ₹"+total;
+
+    let delivery = document.getElementById("delivery");
+    let orderAmount = document.getElementById("total");
+
+    if(total < 10000)
+    {
+      delivery.innerText = "Delivery Cost : ₹"+ 300;
+      orderAmount.innerText = "Order Total : ₹"+(total+300);
+    }
+    else{
+      delivery.innerText = "Delivery Cost : ₹"+0;
+      orderAmount.innerText = "Order Total : ₹"+(total+0);
+    }
+  }
+
+  function deletefromcart(element)
+  {
+    for(var i=0;i<cart.length;i++)
+    {
+        if(cart[i].Name === element.Name)
+        {
+            cart.splice(i,1);
+        }
+    }
+    localStorage.setItem("Cromacart",JSON.stringify(cart));
+
+    showcartproducts(cart);
+  }
+
+  function addtowishlist(product)
+  {
+    if(localStorage.getItem("wishlist")==null)
+    {
+        localStorage.setItem("wishlist",JSON.stringify([]));
+    }
+
+    let arr = JSON.parse(localStorage.getItem("wishlist"));
+
+    let count = 0;
+
+    for(var i=0;i<arr.length;i++)
+    {
+        if(arr[i].Name === product.Name)
+        {
+            var index = i;
+            count++;
+        }
+    }
+    if(count===0)
+    {
+        arr.push(product);
+        alert("Product is added to your wishlist");
+    }
+    else
+    {
+        arr.splice(index,1);
+        alert("Product is removed from your wishlist");
+    }
+
+    localStorage.setItem("wishlist",JSON.stringify(arr));
+    deletefromcart(product)
   }
 </script>
 

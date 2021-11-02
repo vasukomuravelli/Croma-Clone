@@ -471,7 +471,7 @@ margin-left:2%;
 }
 .buttons{
   position: absolute;
-  margin-top: 30px;
+  margin-top: 50px;
   right: 55px;
 }
 
@@ -624,7 +624,7 @@ shopping_cart</span></a>
 
   function showcartproducts(cart)
   {
-      cart.forEach(element => {
+      cart?.forEach(element => {
 
         total += Number(element.New_Price);
         

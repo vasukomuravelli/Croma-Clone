@@ -612,19 +612,20 @@ shopping_cart</span></a>
       modal.style.display = "none";
     }
   }
-  let string = "";
-
+  
   let products = document.querySelector("#itemlist_p");
-
+  
   let cart = JSON.parse(localStorage.getItem("Cromacart"));
-
-  let total = 0;
-
+  
+  
   showcartproducts(cart);
-
+  
   function showcartproducts(cart)
   {
-      cart?.forEach(element => {
+      let string = "";
+      products.innerHTML = null;
+      let total = 0;
+      cart?.forEach((element,index) => {
 
         total += Number(element.New_Price);
         
@@ -643,8 +644,8 @@ shopping_cart</span></a>
       </div>
       
       <div class="buttons">
-        <button onclick = "addtowishlist(${element})" id = "addToWishlist">Add to Watchlist</button><br/>
-        <button onclick = "deletefromcart(${element})" id = "DELETE">Delete</button>
+        <button onclick = "addtowishlist(${index})" id = "addToWishlist">Add to Watchlist</button><br/>
+        <button onclick = "deletefromcart(${index})" id = "DELETE">Delete</button>
       </div>
       
       </div>`;
@@ -659,7 +660,7 @@ shopping_cart</span></a>
     let delivery = document.getElementById("delivery");
     let orderAmount = document.getElementById("total");
 
-    if(total < 10000)
+    if(total < 10000 && cart.length != 0)
     {
       delivery.innerText = "Delivery Cost : ₹"+ 300;
       orderAmount.innerText = "Order Total : ₹"+(total+300);
@@ -670,22 +671,24 @@ shopping_cart</span></a>
     }
   }
 
-  function deletefromcart(element)
+  function deletefromcart(index)
   {
-    for(var i=0;i<cart.length;i++)
-    {
-        if(cart[i].Name === element.Name)
-        {
-            cart.splice(i,1);
-        }
-    }
+    // for(var i=0;i<cart.length;i++)
+    // {
+    //     if(cart[i].Name === element.Name)
+    //     {
+            cart.splice(index,1);
+        // }
+    // }
     localStorage.setItem("Cromacart",JSON.stringify(cart));
 
     showcartproducts(cart);
   }
 
-  function addtowishlist(product)
+  function addtowishlist(index)
   {
+    let product = cart[index];
+
     if(localStorage.getItem("wishlist")==null)
     {
         localStorage.setItem("wishlist",JSON.stringify([]));
@@ -695,12 +698,15 @@ shopping_cart</span></a>
 
     let count = 0;
 
+    let deleteIndex;
+
     for(var i=0;i<arr.length;i++)
     {
         if(arr[i].Name === product.Name)
         {
             var index = i;
             count++;
+            deleteIndex = i;
         }
     }
     if(count===0)
@@ -715,7 +721,7 @@ shopping_cart</span></a>
     }
 
     localStorage.setItem("wishlist",JSON.stringify(arr));
-    deletefromcart(product)
+    deletefromcart(deleteIndex) || deleteIndex;
   }
 </script>
 

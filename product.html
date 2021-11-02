@@ -347,7 +347,7 @@ margin-left:2%;
     background-color: white;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: auto;
     overflow-x: hidden;
     overflow: hidden;
 }
@@ -641,14 +641,14 @@ margin-left:2%;
         /* key features */
 
         #sp-details{
-            margin: 5% 0%;
+            margin: auto;
         }
 
         details{
             padding: 1%;
-            width: 1200px;
+            width: 1266px;
             border: 1px solid rgb(231, 224, 224);
-            margin: 1% 5%;
+            margin: 1% 10%;
             font-size: 20px;
             box-shadow: 1px 1px 3px 4px rgb(231, 224, 224);
             /* display: inline-block; */
@@ -1031,8 +1031,8 @@ margin-left:2%;
             <!-- image zoomer -->
             <div class="sp-container">
                 <img id="sp-image"/>
-                <div class="sp-lens"></div>
-                <div class="sp-result"></div>
+                <!-- <div class="sp-lens"></div>
+                <div class="sp-result"></div> -->
             </div>
         </div>
         <div id="sp-right-box">
@@ -1589,7 +1589,7 @@ margin-left:2%;
 
 
 
-  <script>
+  
     //   image zoomer script
 
     // const container = document.querySelector(".sp-container");
@@ -1655,6 +1655,8 @@ margin-left:2%;
 
     //         return { x, y };
     //     }
+
+    <script>
             
         // script for first carousell
 
@@ -1932,6 +1934,7 @@ margin-left:2%;
 
     function addproduct(){
 
+        console.log("Hello");
     
         if(localStorage.getItem("Cromacart")==null)
         {

@@ -759,6 +759,7 @@ margin-left:2%;
                     background-color: white;
                     margin-right: 1rem;
                     /* padding: 1.2rem; */
+                    cursor: pointer;
                     border-radius: 0.5rem;
                     box-shadow: 1px 1px 16px 1px rgb(223, 204, 204);
                     border: 0.5px rgb(231, 224, 224);
@@ -814,12 +815,6 @@ margin-left:2%;
     border-radius:3px;
     margin-right:15px;
     }
-    .sp-boxforsinglecard{
-
-    height:420px;
-    width:300px;
-    }
-
     .sp-containerofsinglecard
     {
     margin-left:4%;
@@ -879,6 +874,7 @@ margin-left:2%;
                     height: 390px;
                     background-color: white;
                     margin-right: 1rem;
+                    cursor: pointer;
                     /* padding: 1.2rem; */
                     border-radius: 0.5rem;
                     box-shadow: 1px 1px 16px 1px rgb(223, 204, 204);
@@ -935,6 +931,9 @@ margin-left:2%;
 
     border-radius:3px;
     margin-right:15px;
+    }
+    a{
+        color: inherit;
     }
 
     .sps-containerofsinglecard
@@ -1752,7 +1751,7 @@ margin-left:2%;
             }
         }
 
-        st += `<div class="sp-boxforsinglecard">
+        st += `<a href = ./product.html#name=${element.Name}><div class="sp-boxforsinglecard">
                     <div class="sp-cardsinglecard">
                                          <div id="sp-image1" style="width:90%;background-image: url(${element.Image}); display:inline-block">
                                             <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;margin-left:3% display:inline-block">favorite_border </span>
@@ -1761,13 +1760,17 @@ margin-left:2%;
                                           <div class="sp-containerofsinglecard">
                                            <div style="margin-top:7px;margin-bottom:5px;font-size:20px"><b>${name}</b></div>
                                            <div style="margin-top:0px;font-size:20px"><b>₹${element.New_Price}    </b><strike style="margin-left:60px">    ₹${element.Old_Price} </strike></div>
-                                           <div style="margin-top:5px;font-size:15px">${star_Rating}    (${element.Rating_Review_count})</div>
+                                           <div style="margin-bottom:7px;margin-top:4px;font-size:15px">${star_Rating}    (${element.Rating_Review_count})</div>
                                          </div>
                    </div>
                        
-                </div>`
+                </div></a>`
 
     });
+
+    // let Product_link = document.createElement('a');
+
+    // Product_link.href = `./product.html#name=${element.Name}`;
 
     fcontent.innerHTML = st;
     

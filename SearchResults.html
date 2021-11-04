@@ -816,7 +816,8 @@ margin-left:2%;
         let matchingProduct = product.map((product) => {
 
             return `
-            <p class = "selectedResult"><a href = "./SearchResults.html#category=${product.Category}#brand=${product.Brand}">${product.Brand} ${product.Category}</a></p>`;
+            <p class = "selectedResult"><a href="javascript:void(0)" onclick="window.location='./SearchResults.html#category=${product.Category}#brand=${product.Brand}'; location.reload();">${product.Brand} ${product.Category}</a></p>`;
+            
         }).join('');
 
         output.innerHTML = matchingProduct;

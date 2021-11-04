@@ -562,7 +562,9 @@ margin-left:2%;
     /* border: 1px solid black; */
     color: grey;
 }
-
+a{
+    color: inherit;
+}
 </style>
 </head>
 <body>
@@ -1938,7 +1940,7 @@ let data = [
             }
         }
 
-        str += `<div class="sp-boxforsinglecard">
+        str += `<a href = "./product.html#name=${element.Name}"><div class="sp-boxforsinglecard">
                     <div class="sp-cardsinglecard">
                                          <div id="sp-image1" style="width:100%;background-image: url(${element.Image});">
                                             <span class="material-icons" style="color:red;margin-right:8%;margin-top:3%;">favorite_border </span>
@@ -1951,7 +1953,7 @@ let data = [
                                          </div>
                    </div>
                        
-                </div>`
+                </div></a>`
 
     });
 
@@ -2073,7 +2075,7 @@ let data = [
             }
         }
 
-        string += `<div class="sps-boxforsinglecard">
+        string += `<a href = "./product.html#name=${element.Name}"><div class="sps-boxforsinglecard">
                     <div class="sps-cardsinglecard">
                                          <div id="sps-image1" style="width:100%;background-image: url(${element.Image});">
                                             <span class="material-icons" style="color:red;margin-right:8%;margin-top:3%;">favorite_border </span>
@@ -2086,7 +2088,7 @@ let data = [
                                          </div>
                    </div>
                        
-                </div>`
+                </div></a>`
 
     });
 
@@ -2208,7 +2210,7 @@ let data = [
             }
         }
 
-        strt += `<div class="spt-boxforsinglecard">
+        strt += `<a href = "./product.html#name=${element.Name}"><div class="spt-boxforsinglecard">
                     <div class="spt-cardsinglecard">
                                          <div id="spt-image1" style="width:100%;background-image: url(${element.Image});">
                                             <span class="material-icons" style="color:red;margin-right:8%;margin-top:3%;">favorite_border </span>
@@ -2221,7 +2223,7 @@ let data = [
                                          </div>
                    </div>
                        
-                </div>`
+                </div></a>`
 
     });
 
@@ -2343,7 +2345,7 @@ let data = [
             }
         }
 
-        strf += `<div class="spf-boxforsinglecard">
+        strf += `<a href = "./product.html#name=${element.Name}"><div class="spf-boxforsinglecard">
                     <div class="spf-cardsinglecard">
                                          <div id="spf-image1" style="width:100%;background-image: url(${element.Image});">
                                             <span class="material-icons" style="color:red;margin-right:8%;margin-top:3%;">favorite_border </span>
@@ -2356,7 +2358,7 @@ let data = [
                                          </div>
                    </div>
                        
-                </div>`
+                </div></a>`
 
     });
 

@@ -311,13 +311,6 @@ margin-right:3%;
         margin-top: -7px;
     }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  background:teal;
-  
-}
-
-
 .main {
   margin-top: 9%; /* Add a top margin to avoid content overlay */
 }
@@ -474,8 +467,39 @@ margin-left:2%;
   margin-top: 50px;
   right: 55px;
 }
-
-
+.emptyImage{
+  margin: 70px 380px;
+}
+.emptyImage+p{
+  margin-left: 420px;
+  margin-top: -60px;
+  font-weight: 700;
+}
+#output{
+  width: 453px;
+  margin-left: 420px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 60px;
+  max-height: 300px;
+  overflow-y: scroll;
+  z-index: 1;
+  position: fixed;
+  }
+  #output::-webkit-scrollbar {
+  display: none;
+  }
+  #output  p{
+      padding-left: 34px;
+      font-size: 20px;
+      height: 20px;
+      margin-top: auto;
+      display: table-footer-group;
+  }
+  #output a {
+      color: #333 !important;
+      text-decoration: inherit;
+  }
 
 
 /*popup ends here*/
@@ -497,8 +521,9 @@ menu
  <a href="#menu" style="margin-left:-2%; margin-top : 7px;">Sign In</a>
  <a href="#menu" style="margin-left:-2%; margin-top : 7px;">Pincode</a>
   <a href="checkoutimproved.html" style="margin-left:-2.5%"><span class="material-icons">
-shopping_cart</span></a>
-   
+    shopping_cart</span></a>
+    
+    <div id = "output"></div>
    </div>
  </div>
  <!--end of header-->
@@ -560,19 +585,7 @@ shopping_cart</span></a>
                           <input type="password"></input>
                           </br>
                           </br>
-                          
-
                           <button onclick="qwe()">Complete Transaction</button>
-
-                          <script>
-                                function qwe(){
-                                    alert("Transaction Completed successfully");
-                                    setTimeout(() => {
-                                      window.location.href = "index.html";
-                                    }, 2000);
-                                }
-
-                          </script>
                   </div>
 
 
@@ -622,6 +635,14 @@ shopping_cart</span></a>
   
   function showcartproducts(cart)
   {
+      if(cart.length==0)
+      {
+        let text = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ZcrpMkYFSebJYKGPiCcQjc5ZYZFbljtOZg&usqp=CAU" class = "emptyImage"/>
+        <p>Your croma basket is empty</p>`
+        products.innerHTML = text;
+      }
+      else
+      {
       let string = "";
       products.innerHTML = null;
       let total = 0;
@@ -669,6 +690,7 @@ shopping_cart</span></a>
       delivery.innerText = "Delivery Cost : ₹"+0;
       orderAmount.innerText = "Order Total : ₹"+(total+0);
     }
+      }
   }
 
   function deletefromcart(index)
@@ -723,6 +745,71 @@ shopping_cart</span></a>
     localStorage.setItem("wishlist",JSON.stringify(arr));
     deletefromcart(deleteIndex) || deleteIndex;
   }
+  function qwe(){                                
+    alert("Transaction Completed successfully");
+    while(cart.length>0)
+    {
+      cart.pop();
+    }
+    showcartproducts(cart);
+    setTimeout(() => {                                      
+      window.location.href = "index.html";
+    }, 2000);
+  }
+
+  //   SearchBar functionality
+
+  let searchbar = document.getElementById('searchbar');
+  
+  let data =  JSON.parse(localStorage.getItem("CromaProducts"));
+
+    searchbar.addEventListener('keyup', (e) => {
+        let searchString = e.target.value.toLowerCase();
+        let matchedData =[];
+        let tempData = {}
+        if (searchString != '') {
+             matchedData = data.filter(product => {
+                 if(product.Category.includes(searchString) || product.Brand.includes(searchString)){
+                    //  console.log(matchedData.length)
+                    // console.log()
+                    return true
+                }else{
+                    return false
+                }
+
+                // return (product.Category.includes(searchString) || product.Brand.includes(searchString))
+                // console.log(e.Category)
+    
+            });
+            if (matchedData.length > 0) {
+    
+                displayProducts(matchedData);
+            }
+            else {
+                let output = document.getElementById("output")
+                output.innerHTML = `<p style = "margin : 20px auto">No search results found</p>`;
+            }
+        }
+        else {
+            let output = document.getElementById("output")
+            output.innerHTML = '';
+        }
+    });
+
+    // Displaying the search results
+    
+    let output = document.getElementById("output")
+
+    let displayProducts = (product) => {
+
+        let matchingProduct = product.map((product) => {
+
+            return `
+            <p class = "selectedResult"><a href = "./SearchResults.html#category=${product.Category}#brand=${product.Brand}">${product.Brand} ${product.Category}</a></p>`;
+        }).join('');
+
+        output.innerHTML = matchingProduct;
+    }
 </script>
 
 

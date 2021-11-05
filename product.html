@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Footer Design</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Croma Electronics | Online Electronics Shopping | Buy...</title>
+    <link rel="icon" href="https://www.croma.com/assets/croma-icon-192.png"/>
   <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -250,7 +251,7 @@ margin-left:1%;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  height:14%;
+  height:9%;
   z-index:1;
 }
 
@@ -268,10 +269,6 @@ margin-left:1%;
 }
 
 /* Change background on mouse-over */
-.navbar a:hover {
-  background:teal;
-  
-}
 
 
 .main {
@@ -350,7 +347,7 @@ margin-left:2%;
     background-color: white;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: auto;
     overflow-x: hidden;
     overflow: hidden;
 }
@@ -616,6 +613,7 @@ margin-left:2%;
         #sp-image{
             width: 100%;
             height: auto;
+            margin-top: -100px;
         }
 
         .sp-lens{
@@ -643,14 +641,14 @@ margin-left:2%;
         /* key features */
 
         #sp-details{
-            margin: 5% 0%;
+            margin: auto;
         }
 
         details{
             padding: 1%;
-            width: 1200px;
+            width: 1266px;
             border: 1px solid rgb(231, 224, 224);
-            margin: 1% 5%;
+            margin: 1% 10%;
             font-size: 20px;
             box-shadow: 1px 1px 3px 4px rgb(231, 224, 224);
             /* display: inline-block; */
@@ -761,6 +759,7 @@ margin-left:2%;
                     background-color: white;
                     margin-right: 1rem;
                     /* padding: 1.2rem; */
+                    cursor: pointer;
                     border-radius: 0.5rem;
                     box-shadow: 1px 1px 16px 1px rgb(223, 204, 204);
                     border: 0.5px rgb(231, 224, 224);
@@ -799,11 +798,11 @@ margin-left:2%;
     /*# sourceMappingURL=final-scroll.sass.css.map */
             #sp-image1{
 
-    height:70%;
-    width:100%;
+    height:64%;
     border-radius:3px;
     text-align:right;
-    background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+    background-repeat: no-repeat;
+    margin: 5px 0 5px 10px;
     }
 
     .sp-cardsinglecard{
@@ -816,12 +815,6 @@ margin-left:2%;
     border-radius:3px;
     margin-right:15px;
     }
-    .sp-boxforsinglecard{
-
-    height:420px;
-    width:300px;
-    }
-
     .sp-containerofsinglecard
     {
     margin-left:4%;
@@ -878,9 +871,10 @@ margin-left:2%;
 
                 .sps-carousell-content .sps-boxforsinglecard {
                     width: 300px;
-                    height: 380px;
+                    height: 390px;
                     background-color: white;
                     margin-right: 1rem;
+                    cursor: pointer;
                     /* padding: 1.2rem; */
                     border-radius: 0.5rem;
                     box-shadow: 1px 1px 16px 1px rgb(223, 204, 204);
@@ -920,11 +914,12 @@ margin-left:2%;
     /*# sourceMappingURL=final-scroll.sass.css.map */
             #sps-image1{
 
-    height:70%;
-    width:100%;
+    height:64%;
+    width:70%;
     border-radius:3px;
     text-align:right;
-    background-image: url("https://i.postimg.cc/XYQLVdkh/241953-wmcume.png");
+    background-repeat: no-repeat;
+    margin: 5px 0;
     }
 
     .sps-cardsinglecard{
@@ -937,10 +932,8 @@ margin-left:2%;
     border-radius:3px;
     margin-right:15px;
     }
-    .sps-boxforsinglecard{
-
-    height:420px;
-    width:300px;
+    a{
+        color: inherit;
     }
 
     .sps-containerofsinglecard
@@ -956,7 +949,42 @@ margin-left:2%;
         /* border: 1px solid black; */
         color: grey;
     }
+    #output{
+        width: 453px;
+        margin-left: 420px;
+        background-color: white;
+        border-radius: 5px;
+        margin-top: 60px;
+        max-height: 300px;
+        overflow-y: scroll;
+        z-index: 1;
+        position: fixed;
+    }
+    #output::-webkit-scrollbar {
+    display: none;
+    }
+    #output  p{
+        padding-left: 34px;
+        font-size: 20px;
+        height: 20px;
+        margin-top: auto;
+        display: table-footer-group;
+    }
+    #output a {
+        color: #333 !important;
+        text-decoration: inherit;
 
+    }
+
+    #searchbar {
+        border-radius: 0.5rem;
+        font-size: 20px;
+        padding-left: 50px;
+        background-color: white;
+    }
+    .navbar span{
+        margin-top: -7px;
+    }
 
 </style>
 </head>
@@ -972,21 +1000,23 @@ margin-left:2%;
 
 <!-- start of header-->
 <div class="navbar" style="text-align:center">
-    <div style="margin-bottom:20px">
-   <a href="#home" style="margin-top:2px;margin-left:7.8px"><img src="https://i.postimg.cc/Wb8fn0cT/Screenshot-103.jpg" style="width:143.5px; height:44.5px;"/></a>
+    <div style="margin-top:-7px;font-size: 20px;">
+   <a href="index.html" style="margin-top:-1.1px;margin-left:7.8px"><img src="https://i.postimg.cc/Wb8fn0cT/Screenshot-103.jpg" style="width:143.5px; height:44.5px;"/></a>
    <a href="#menu"><span class="material-icons" >
  menu
  </span></a>
- <a style="margin-left:-30px">Menu</a>
-   <a style="margin-right:0px;margin-top:2px"><input type="text" placeholder="What are you looking for ?" style="height:35px;width:450px;border-radius:5px;border:0px;padding-left:20px;"></input>
+ <a style="margin-left:-68px; margin-top : 7px;">Menu</a>
+   <a style="margin-right:0px;margin-top:2px"><input type="text" placeholder="What are you looking for ?" id = "searchbar" style="height:35px;width:450px;border-radius:5px;border:0px;padding-left:20px;"></input>
  </a>
- <a><img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:34.5px;margin-top:-11px;margin-left:-95px; border-radius: 3px;"/></a>
-   <a href="#menu" style="margin-left:-50px">Orders</a>
-   <a href="#menu" style="margin-left:-2%">Sign In</a>
-   <a href="#menu" style="margin-left:-2%">Pincode</a>
-    <a href="#menu" style="margin-left:-2.5%"><span class="material-icons">
+ <a><img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:35px;margin-top:-14px;margin-left:-106px"/></a>
+   <a href="#menu" style="margin-left:-50px ; margin-top : 7px;">Orders</a>
+   <a href="#menu" style="margin-left:-2%; margin-top : 7px;">Sign In</a>
+   <a href="#menu" style="margin-left:-2%; margin-top : 7px;">Pincode</a>
+    <a href="checkoutimproved.html" style="margin-left:-2.5%"><span class="material-icons">
  shopping_cart</span></a>
-   
+
+ <div id = "output"></div>
+
    </div>
  </div>
  <!--end of header-->
@@ -996,8 +1026,8 @@ margin-left:2%;
             <!-- image zoomer -->
             <div class="sp-container">
                 <img id="sp-image"/>
-                <div class="sp-lens"></div>
-                <div class="sp-result"></div>
+                <!-- <div class="sp-lens"></div>
+                <div class="sp-result"></div> -->
             </div>
         </div>
         <div id="sp-right-box">
@@ -1088,8 +1118,8 @@ margin-left:2%;
         <!-- Add to cart button container -->
         
             <div class="sp-add-to-cart-btn">
-                <button class="sp-add-to-cart">ADD TO CART</button>
-                <button class="sp-buy-now">BUY NOW</button>
+                <button class="sp-add-to-cart" onclick="addproduct()">ADD TO CART</button>
+                <a href="checkoutimproved.html" onclick="addproduct()"><button class="sp-buy-now">BUY NOW</button></a>
             </div>
             </div>
     </div>
@@ -1159,150 +1189,7 @@ margin-left:2%;
 
     <div class="sp-carousell-container">
 
-        <div class="sp-carousell-content" id="sp-carousellContent">
-
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-                
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-                
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-                
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-                
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-                
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-            
-
-                
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-                <div class="sp-boxforsinglecard">
-                    <div class="sp-cardsinglecard">
-                                         <div id="sp-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-
-           
-
-        </div>
+        <div class="sp-carousell-content" id="sp-carousellContent"></div>
 
         <div class="sp-controls">
             <button class="sp-btn sp-left sp-show" id="sp-carousellLeftBtn">&lt;</button>
@@ -1322,150 +1209,7 @@ margin-left:2%;
 
     <div class="sps-carousell-container">
 
-        <div class="sps-carousell-content" id="sps-carousellContent">
-
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sps-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-                
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sps-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-                
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-                
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sps-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-                
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sps-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-                
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sps-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-            
-
-                
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sp-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-                <div class="sps-boxforsinglecard">
-                    <div class="sps-cardsinglecard">
-                                         <div id="sps-image1" style="width:100%;">
-                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
-                                         </div>
-                     
-                                          <div class="sps-containerofsinglecard">
-                                           <div style="margin-top:-10px;margin-bottom:15px;font-size:20px"><b>One Plus Nord</b></div>
-                                           <div style="margin-top:4px;font-size:20px"><b>₹25000.00    </b><strike style="margin-left:60px">     ₹ 30000.99 </strike></div>
-                                           <div style="margin-top:15px;font-size:15px">⭐⭐⭐⭐⭐</div>
-                                         </div>
-                   </div>
-                       
-                </div>
-
-
-
-
-           
-
-        </div>
+        <div class="sps-carousell-content" id="sps-carousellContent"></div>
 
         <div class="sps-controls">
             <button class="sps-btn sps-left sps-show" id="sps-carousellLeftBtn">&lt;</button>
@@ -1552,74 +1296,7 @@ margin-left:2%;
   	 </div>
   </footer>
 
-
-
-  <script>
-    //   image zoomer script
-
-    const container = document.querySelector(".sp-container");
-        const image = document.querySelector("#sp-image");
-        const lens = document.querySelector(".sp-lens");
-        const result = document.querySelector(".sp-result");
-
-
-        container.addEventListener("mouseenter", enableResult);
-        container.addEventListener("mouseleave", disableResult);
-
-        function enableResult(){
-            result.style.opacity = "1";
-        }
-
-        function disableResult(){
-            result.style.opacity = "0";
-        }
-
-        const containerRect = container.getBoundingClientRect();
-        const imageRect = image.getBoundingClientRect();
-        const lensRect = lens.getBoundingClientRect();
-        const resultRect = result.getBoundingClientRect();
-
-        container.addEventListener("mousemove", zoomImage);
-        result.style.backgroundImage =  "url('" + image.src + "')";
-
-        function zoomImage(e){
-            console.log("zoom: ", e.clientX, e.clientY);
-            const { x, y } = getMousePos(e);
-            console.log(x, y);
-            lens.style.left = x + "px";
-            lens.style.top = y + "px";
-
-            let fx = resultRect.width / lensRect.width;
-            let fy = resultRect.height / lensRect.height;
-            result.style.backgroundSize = (imageRect.width * fx) + "px" +  (imageRect.height * fy) + "px";
-            result.style.backgroundPosition = "-" + (x * fx) + "px -" + (y * fy) + "px";
-        }
-
-        function getMousePos(e){
-            let x = e.clientX - containerRect.left - (lensRect.width/2);
-            let y = e.clientY - containerRect.top - (lensRect.height/2);
-
-            let minX = 0;
-            let minY = 0;
-            let maxX = containerRect.width - lensRect.width;
-            let maxY = containerRect.height - lensRect.height;
-
-            if(x <= minX){
-                x = minX;
-            }
-            else if(x >= maxX) {
-                x = maxX;
-            }
-
-            if(y <= minY){
-                y = minY;
-            }
-            else if(y >= maxY) {
-                y = maxY;
-            }
-
-            return { x, y };
-        }
+    <script>
             
         // script for first carousell
 
@@ -1841,6 +1518,193 @@ margin-left:2%;
         let productimage = document.getElementById("sp-image");
 
         productimage.src = requested_product.Image;
+
+
+        let searchbar = document.getElementById('searchbar');
+  
+  let data =  JSON.parse(localStorage.getItem("CromaProducts"));
+
+    searchbar.addEventListener('keyup', (e) => {
+        let searchString = e.target.value.toLowerCase();
+        let matchedData =[];
+        let tempData = {}
+        if (searchString != '') {
+             matchedData = data.filter(product => {
+                 if(product.Category.includes(searchString) || product.Brand.includes(searchString)){
+                    //  console.log(matchedData.length)
+                    // console.log()
+                    return true
+                }else{
+                    return false
+                }
+
+                // return (product.Category.includes(searchString) || product.Brand.includes(searchString))
+                // console.log(e.Category)
+    
+            });
+            if (matchedData.length > 0) {
+    
+                displayProducts(matchedData);
+            }
+            else {
+                let output = document.getElementById("output")
+                output.innerHTML = `<p style = "margin : 20px auto">No search results found</p>`;
+            }
+        }
+        else {
+            let output = document.getElementById("output")
+            output.innerHTML = '';
+        }
+    });
+
+    // Displaying the search results
+    
+    let output = document.getElementById("output")
+
+    let displayProducts = (product) => {
+
+        let matchingProduct = product.map((product) => {
+
+            return `
+            <p class = "selectedResult"><a href = "./SearchResults.html#category=${product.Category}#brand=${product.Brand}">${product.Brand} ${product.Category}</a></p>`;
+        }).join('');
+
+        output.innerHTML = matchingProduct;
+    }
+
+    function addproduct(){
+    
+        if(localStorage.getItem("Cromacart")==null)
+        {
+            localStorage.setItem("Cromacart",JSON.stringify([]));
+        }
+
+        let arr = JSON.parse(localStorage.getItem("Cromacart"));
+
+        arr.push(requested_product);
+
+        alert(`${requested_product.Category} is added to your cart`);    
+
+        localStorage.setItem("Cromacart",JSON.stringify(arr));
+
+    }
+
+    let content = document.getElementById("sps-carousellContent");
+    let str = "";
+
+        let SmartPhones = [];
+        
+        croma_data.forEach((product) => {
+            if (product.Category == "mobile") {
+          SmartPhones.push(product);
+        }
+    });
+
+    SmartPhones.forEach(element=>{
+
+        let name = element.Name;
+        let new_name = "";
+        
+        if(name.length > 40)
+        {
+            for(let i=0;i<40;i++)
+            {
+                new_name = new_name + name[i];
+            }
+            name = new_name + "...";
+        }
+        let star_Rating = "";
+        
+        for (let i = 1; i <= 5; i++) {
+            if (i < (Math.floor(element.Rating) + 1)) {
+                star_Rating += '<span class = "fa fa-star checked"></span>';
+                
+            } else {
+                star_Rating += '<span class = "fa fa-star unchecked"></span>';
+                
+            }
+        }
+
+        str += `<a href="javascript:void(0)" onclick="window.location='./product.html#name=${element.Name}'; location.reload();"><div class="sps-boxforsinglecard">
+                    <div class="sps-cardsinglecard">
+                                         <div id="sps-image1" style="width:100%;background-image: url(${element.Image});">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sps-containerofsinglecard">
+                                           <div style="margin-top:10px;margin-bottom:5px;font-size:20px"><b>${name}</b></div>
+                                           <div style="margin-top:0px;font-size:20px"><b>₹${element.New_Price}    </b><strike style="margin-left:60px">    ₹${element.Old_Price} </strike></div>
+                                           <div style="margin-top:5px;font-size:15px">${star_Rating}    (${element.Rating_Review_count})</div>
+                                         </div>
+                   </div>
+                       
+                </div></a>`
+
+    });
+
+    content.innerHTML = str;
+
+    
+    let fcontent = document.getElementById("sp-carousellContent");
+    let st = "";
+
+    let laptab = [];
+
+    croma_data.forEach(product => {
+        if(product.Category == 'laptop' || product.Category == 'tablet')
+        {
+            laptab.push(product);
+        }
+    })
+
+    laptab.forEach(element=>{
+
+        let name = element.Name;
+        let new_name = "";
+        
+        if(name.length > 40)
+        {
+            for(let i=0;i<40;i++)
+            {
+                new_name = new_name + name[i];
+            }
+            name = new_name + "...";
+        }
+        let star_Rating = "";
+        
+        for (let i = 1; i <= 5; i++) {
+            if (i < (Math.floor(element.Rating) + 1)) {
+                star_Rating += '<span class = "fa fa-star checked"></span>';
+                
+            } else {
+                star_Rating += '<span class = "fa fa-star unchecked"></span>';
+                
+            }
+        }
+
+        st += `<a href="javascript:void(0)" onclick="window.location='./product.html#name=${element.Name}'; location.reload();"><div class="sp-boxforsinglecard">
+                    <div class="sp-cardsinglecard">
+                                         <div id="sp-image1" style="width:90%;background-image: url(${element.Image}); display:inline-block">
+                                            <span class="material-icons" style="color:red;margin-right:3%;margin-top:3%;margin-left:3% display:inline-block">favorite_border </span>
+                                         </div>
+                     
+                                          <div class="sp-containerofsinglecard">
+                                           <div style="margin-top:7px;margin-bottom:5px;font-size:20px"><b>${name}</b></div>
+                                           <div style="margin-top:0px;font-size:20px"><b>₹${element.New_Price}    </b><strike style="margin-left:60px">    ₹${element.Old_Price} </strike></div>
+                                           <div style="margin-bottom:7px;margin-top:4px;font-size:15px">${star_Rating}    (${element.Rating_Review_count})</div>
+                                         </div>
+                   </div>
+                       
+                </div></a>`
+
+    });
+
+    // let Product_link = document.createElement('a');
+
+    // Product_link.href = `./product.html#name=${element.Name}`;
+
+    fcontent.innerHTML = st;
+    
   </script>
 
 </body>

@@ -2,7 +2,7 @@
 ---
 * Cromā an Indian retail chain of consumer electronics and durables run by Infiniti Retail, a subsidiary of the Tata Group. It has become synonymous for all electronics needs, both online & in-store, with a wide product range and tech-savvy staff with a will to help customers throughout their buying journeys.
 
-## tech stacks used :
+## Tech stacks used :
 ---
 * html,
 * css, 

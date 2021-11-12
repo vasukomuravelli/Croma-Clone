@@ -779,6 +779,10 @@ var fl= localStorage.getItem("flag");
 	}
 	else
 	tempb.textContent="MyWishlist";
+    if(tempb.textContent=='MyWishlist')
+    tempb.onclick = function(){
+        window.location.href = "Wishlist.html";
+    }
 //   SearchBar functionality
 
   let searchbar = document.getElementById('searchbar');

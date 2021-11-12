@@ -558,7 +558,9 @@ menu
         <label id="delivery"></label></br></br>
     </hr>
         <label id="total"></label></br></br>
-        <button id="myBtn" style="color:teal;padding:5px;border:0px;height:25px;cursor:pointer">Checkout</button>
+        <button id="myBtn" style="color:teal;padding:5px;border:0px;width="150px";height:25px;cursor:pointer">Checkout</button>
+        <button id="so" onclick="rem()" style="color:teal;padding:5px;border:0px;width=80px;height:25px;cursor:pointer">Logout</button>
+      
     </div>
 </div>
 </div>
@@ -618,6 +620,10 @@ menu
     tempb.onclick = function(){
         window.location.href = "Wishlist.html";
     }
+	
+	function rem(){
+		localStorage.removeItem("flag");
+	}
   var modal = document.getElementById("myModal");
     
   // Get the button that opens the modal

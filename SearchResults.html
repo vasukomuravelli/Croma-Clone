@@ -588,7 +588,7 @@ margin-left:2%;
  </a>
  <a><img src="https://i.postimg.cc/SQnPQc51/Screenshot-108.jpg" style="height:35px;margin-top:-14px;margin-left:-106px"/></a>
    <a href="#menu" style="margin-left:-50px ; margin-top : 7px;">Orders</a>
-   <a href="#menu" style="margin-left:-2%; margin-top : 7px;">Sign In</a>
+   <a href="#menu" id="myBtn" style="margin-left:-2%; margin-top : 7px;">Sign In</a>
    <a href="#menu" style="margin-left:-2%; margin-top : 7px;">Pincode</a>
     <a href="checkoutimproved.html" style="margin-left:-2.5%"><span class="material-icons">
  shopping_cart</span></a>
@@ -770,7 +770,15 @@ margin-left:2%;
 </body>
 </html>
 <script>
-
+var fl= localStorage.getItem("flag");
+	var tempb=document.getElementById("myBtn");
+	if(!fl)
+	{
+	 tempb.textContent="SignIn";
+		
+	}
+	else
+	tempb.textContent="MyWishlist";
 //   SearchBar functionality
 
   let searchbar = document.getElementById('searchbar');

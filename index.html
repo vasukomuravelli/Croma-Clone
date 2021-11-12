@@ -2551,6 +2551,10 @@ let data = [
 	}
 	else
 	tempb.textContent="MyWishlist";
+    if(tempb.textContent=='MyWishlist')
+    tempb.onclick = function(){
+        window.location.href = "Wishlist.html";
+    }
          
     // Get the modal
     var modal = document.getElementById("myModal");

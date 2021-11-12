@@ -2542,6 +2542,16 @@ let data = [
 
 
 <script>
+	var fl= localStorage.getItem("flag");
+	var tempb=document.getElementById("myBtn");
+	if(!fl)
+	{
+	 tempb.textContent="Signin";
+		
+	}
+	else
+	tempb.textContent="MyWishlist";
+         
     // Get the modal
     var modal = document.getElementById("myModal");
     
@@ -2609,6 +2619,7 @@ else
          modal.style.display = "none";
          var tempbutton=document.getElementById("myBtn");
          tempbutton.textContent="My Wishlist";
+	        localStorage.setItem("flag",1);
           tempbutton.onclick = function() {
           window.location.href = "Wishlist.html"
         }
